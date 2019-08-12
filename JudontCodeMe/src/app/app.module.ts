@@ -3,30 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { PageTwoComponent } from './page-two/page-two.component';
-import { PageThreeComponent } from './page-three/page-three.component';
-import { PageFourComponent } from './page-four/page-four.component';
-import { PageFiveComponent } from './page-five/page-five.component';
-import { PageSixComponent } from './page-six/page-six.component';
-import { PageSevenComponent } from './page-seven/page-seven.component';
-import { PageEightComponent } from './page-eight/page-eight.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { FindaclubComponent } from './findaclub/findaclub.component';
+import { YudanshakaiComponent } from './yudanshakai/yudanshakai.component';
+import { MemberconnectComponent } from './memberconnect/memberconnect.component';
+import { EventComponent } from './event/event.component';
+import { NewsComponent } from './news/news.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent,
-    PageTwoComponent,
-    PageThreeComponent,
-    PageFourComponent,
-    PageFiveComponent,
-    PageSixComponent,
-    PageSevenComponent,
-    PageEightComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    FindaclubComponent,
+    YudanshakaiComponent,
+    MemberconnectComponent,
+    EventComponent,
+    NewsComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
