@@ -1,24 +1,53 @@
-<div class="Logo">
-    <p> Logo </p>
+<div class="menu-container">
+    <div class="menu">
+        <div class="logo">
+            <a href="../home">
+                <img alt="AJA Logo" src="../../assets/AJA.png" height="200" width="300">
+            </a>
+            <h3>You have ukemi on American Judo Alliance!</h3>
+        </div>
+        <app-header></app-header>
+    </div>
+</div>
+<div class="sidebar">
+    <a class="active"></a>
+    <h1>Affiliates</h1>
+    <a href="https://www.teamusa.org/USA-Judo">
+        <img alt="USA Judo" src="../../assets/usajudo.png" height="50" width="100">
+    </a>
+    <br>
+    <a href="https://www.usja.net/">
+        <img alt="USJA" src="../../assets/usja.png" height="60" width="60">
+    </a>
+    <br>
+    <a href="https://www.usjf.com/">
+        <img alt="USJF" src="../../assets/usjf.png" height="40" width="80">
+    </a>
+    <br>
+    <a href="http://panamericanjudo.com/">
+        <img alt="PanAmCon" src="../../assets/panamcon.png" height="60" width="80">
+    </a>
+    <br>
+    <a href="https://www.ijf.org/">
+        <img alt="IJF" src="../../assets/ijf.png" height="80" width="80">
+    </a>
+</div>
+<div class="container">
+    <div class="PhotoSlide">
+        <slideshow [imageUrls]="imageUrlArray"></slideshow>
+    </div>
+    <div class="JudokaMonth">
 
-    <app-header></app-header>
+    </div>
+    <div class="">
 
-    <div class="side-bar-1-1">
-        <p>Affiliate Logos</p>
+    </div>
+    <div class="">
 
-        <div class="content-1-1">
-            <p>Photo Slide</p>
+    </div>
+</div>
+<div class="sidebar">
 
-            <div class="content-2-1">
-                <p>Event Feed</p>
+</div>
 
-                <div class="content-3-1">
-                    <p>Featured Judoka of the Month</p>
-
-                    <div class="content-4-1">
-                        <p>News Feed</p>
-
-                        <div class="side-bar-2-1">
-                            <p>Sponsor Logo</p>
-
-                            <app-footer></app-footer>
+<app-footer></app-footer>
