@@ -9,25 +9,50 @@
 .menu-container {
     color: white;
     background-color: rgb(157, 157, 161);
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    width: auto;
 }
 
 .menu {
     border: 1px solid white;
-    width: 900px;
+    width: auto;
     justify-content: space-around;
     display: flex;
 }
 
 
-/* logos */
+/* sidebar */
 
-
-/* wording */
-
-.h3 {
-    justify-content: right;
-    display: block;
+.item--left-column {
+    border-color: black;
+    border-width: 1px;
+    background-color: rgb(157, 157, 161);
+    width: 120px;
+    justify-content: center;
+    border: inset;
+    padding: 10px;
+    margin: 10px;
 }
+
+
+/* judoka of the month */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-fluid {
+    background-color: rgb(157, 157, 161);
+    width: 500px;
+    border: inset;
+    border-color: black;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+
+/* slideshow */
