@@ -55,4 +55,12 @@ img {
 }
 
 
-/* slideshow */
+/* news */
+
+#news {
+    max-width: 90%;
+    height: auto;
+}
+
+
+/* events */
