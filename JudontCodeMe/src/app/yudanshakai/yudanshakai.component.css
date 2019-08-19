@@ -1,3 +1,38 @@
-.body {
-    margin-top: 100px; 
+.container {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    grid-column-gap: 1em;
+    grid-auto-rows: 100px;
+    text-align: center;
+}
+
+.container > div {
+    margin-top: 100px;
+    background: #eee;
+    padding: 40px;
+}
+
+.box1 {
+    grid-row: 1/4;
+    height: 650px;
+}
+
+.box2 {
+    grid-row: 1/4;
+    position: static;
+    height: 650px;
+    overflow: auto;
+}
+
+.box3 {
+    margin-right: 30px;
+}
+
+.box4 {
+    margin-right: 30px;
+}
+
+.box5 {
+    margin-right: 30px;
+    height: 450px;
 }
