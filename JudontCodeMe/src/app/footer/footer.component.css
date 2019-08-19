@@ -1,0 +1,16 @@
+.footer {
+    font-family: sans-serif;
+    background: #252525;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    color: white;
+    bottom: 0;
+    right:0;
+    left: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
