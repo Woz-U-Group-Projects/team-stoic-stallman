@@ -1,13 +1,14 @@
 .slick-slider {
-    width: 90%;
+    width: 60%;
+    height: 100%;
     margin: auto;
-    background: #000;
+    background: gray;
 }
 
 .nav-btn {
-    height: 47px;
+    height: 20px;
     position: absolute;
-    width: 26px;
+    width: 28px;
     cursor: pointer;
     top: 100px !important;
 }
