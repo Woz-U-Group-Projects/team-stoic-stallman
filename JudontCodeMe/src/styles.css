@@ -4,8 +4,7 @@ body {
     background-color: aquamarine;
 }
 
-#header {
-    text-align: center;
+.container {
     font-family: Arial, Helvetica, sans-serif;
 }
 
