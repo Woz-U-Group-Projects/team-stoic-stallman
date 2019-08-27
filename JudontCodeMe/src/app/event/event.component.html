@@ -1,44 +1,75 @@
-<app-header></app-header>
-
-<div class="container">
-
-    <div class="box1">
-        <div>
-            <h2>Event Form</h2>
-            <br/> Event Type
-            <br/> Event Name
-            <br/> Event Location & Address
-            <br/> Event Description
-            <br/> Affiliation (dropdown)
-            <br/> Yudanshakai
-            <br/> Club (dropdown)
-            <br/> Rank (dropdown)
-            <br/> Existing Member Number
-            <br/> Participation (multi-select)
-            <br/> First Name, Middle Name, Last Name
-            <br/> Email
-            <br/> Phone
-            <br/> Address
-            <br/> Date of Birth
-            <br/> Age
-            <br/> Gender
-            <br/> Emergency Contact
-            <br/> Emergency Phone Number
-            <br/> Waive
-            <br/> Code of Conduct
-        </div>
-    </div>
-
-        <div class="box2">
-            <div>Filter: <a href="event">Year</a> | <a href="event">Month</a> | <a href="event">Type</a> | <a href="event">Affiliation</a> | <a href="event">State</a></div>
-        </div>
-
-            <div class="box3">
-                <p>
-                    Event Calender
-                </p>
-            </div>
-
-    </div>
-
-                <app-footer></app-footer>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1em;
+        grid-auto-rows: 80px;
+    }
+    .container > div {
+        margin-top: 100px;
+        background: #eee;
+        padding: 30px;
+    }
+    .box1 {
+        height: 660px;
+        text-align: center;
+    }
+    .box2 {
+        grid-column: 2;
+        margin-right: 15px;
+    }
+    .box3 {
+        height: 580px;
+        grid-column: 2;
+        margin-right: 15px;
+        overflow: auto;
+    }
+    
+    body {
+        font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+    </style>
+        
+        <app-header></app-header>
+        
+        <div class="container">
+    
+                <div class="box1">
+                    <div>
+                        <h2>Event Form</h2>
+                        <br/> Event Type
+                        <br/> Event Name
+                        <br/> Event Location & Address
+                        <br/> Event Description
+                        <br/> Affiliation (dropdown)
+                        <br/> Yudanshakai
+                        <br/> Club (dropdown)
+                        <br/> Rank (dropdown)
+                        <br/> Existing Member Number
+                        <br/> Participation (multi-select)
+                        <br/> First Name, Middle Name, Last Name
+                        <br/> Email
+                        <br/> Phone
+                        <br/> Address
+                        <br/> Date of Birth
+                        <br/> Age
+                        <br/> Gender
+                        <br/> Emergency Contact
+                        <br/> Emergency Phone Number
+                        <br/> Waive
+                        <br/> Code of Conduct
+                    </div>
+                </div>
+            
+                    <div class="box2">
+                        <div>Filter: <a href="event">Year</a> | <a href="event">Month</a> | <a href="event">Type</a> | <a href="event">Affiliation</a> | <a href="event">State</a></div>
+                    </div>
+            
+                        <div class="box3">
+                            <full-calendar defaultView="dayGridMonth" [plugins]="calendarPlugins"></full-calendar>
+                        </div>
+            
+                </div>
+        
+        <app-footer></app-footer>

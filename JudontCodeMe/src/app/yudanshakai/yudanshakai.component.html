@@ -1,48 +1,121 @@
-<app-header></app-header>
-
-    <div class="container">
-
-        <div class="box1">
-            Affiliates
-        </div>
-
-        <div class="box2">
-            <div>
-                <h2>Online Member Form</h2>
-                <br/><br/> Affiliation (dropdown)
-                <br/><br/> Yudanshakai (dropdown)
-                <br/><br/> Club (breakdown)
-                <br/><br/> Rank (breakdown)
-                <br/><br/> Existing Member Number
-                <br/><br/> Participation (multi-select)
-                <br/><br/> First Name, Middle Name, Last Name
-                <br/><br/> Email
-                <br/><br/> Phone
-                <br/><br/> Address
-                <br/><br/> Date of Birth
-                <br/><br/> Age
-                <br/><br/> Gender
-                <br/><br/> Race
-                <br/><br/> Attendance Expectation (dropdown)
-                <br/><br/> Membership Choice
-                <br/><br/> Background Screening
-                <br/><br/> Waiver
-                <br/><br/> Code of Conduct
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+        grid-column-gap: 1em;
+        grid-auto-rows: 100px;
+        text-align: center;
+    }
+    
+    .container > div {
+        margin-top: 100px;
+        background: #eee;
+        padding: 40px;
+    }
+    
+    .box1 {
+        grid-row: 1/4;
+        height: 650px;
+    }
+    
+    .box2 {
+        grid-row: 1/4;
+        position: static;
+        height: 650px;
+        overflow: auto;
+    }
+    
+    .box3 {
+        margin-right: 30px;
+    }
+    
+    .box4 {
+        margin-right: 30px;
+    }
+    
+    .box5 {
+        margin-right: 30px;
+        height: 450px;
+    }
+    </style>
+    
+    <app-header></app-header>
+    
+        <div class="container">
+    
+            <div class="box1">
+                <br>
+                <br>
+                <a href="https://www.teamusa.org/USA-Judo">
+                    <img alt="USA Judo" src="../../assets/usajudo.png" width="100px">
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="https://www.usja.net/">
+                    <img alt="USJA" src="../../assets/usja.png" width="100px">
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="https://www.usjf.com/">
+                    <img alt="USJF" src="../../assets/usjf.png" width="100px">
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="http://panamericanjudo.com/">
+                    <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px">
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="https://www.ijf.org/">
+                    <img alt="IJF" src="../../assets/ijf.png" width="100px">
+                </a>
             </div>
-        </div>
-
-            <div class="box3">
-                <div>PayPal</div>
-            </div>
-
-                <div class="box4">
-                    <p>Search Frequently Asked Questions</p>
+    
+            <div class="box2">
+                <div>
+                    <h2>Online Member Form</h2>
+                    <br/><br/> Affiliation (dropdown)
+                    <br/><br/> Yudanshakai (dropdown)
+                    <br/><br/> Club (breakdown)
+                    <br/><br/> Rank (breakdown)
+                    <br/><br/> Existing Member Number
+                    <br/><br/> Participation (multi-select)
+                    <br/><br/> First Name, Middle Name, Last Name
+                    <br/><br/> Email
+                    <br/><br/> Phone
+                    <br/><br/> Address
+                    <br/><br/> Date of Birth
+                    <br/><br/> Age
+                    <br/><br/> Gender
+                    <br/><br/> Race
+                    <br/><br/> Attendance Expectation (dropdown)
+                    <br/><br/> Membership Choice
+                    <br/><br/> Background Screening
+                    <br/><br/> Waiver
+                    <br/><br/> Code of Conduct
                 </div>
-
-                    <div class="box5">
-                        <p>Frequently Asked Questions with Answers</p>
+            </div>
+    
+                <div class="box3">
+                    <a href="paypal">PayPal</a>
+                </div>
+    
+                    <div class="box4">
+                        <p>Search Frequently Asked Questions</p>
                     </div>
-
-                    </div>
-
-                        <app-footer></app-footer>
+    
+                        <div class="box5">
+                            <p>Frequently Asked Questions with Answers</p>
+                        </div>
+    
+                        </div>
+    
+                            <app-footer></app-footer>
