@@ -1,16 +1,41 @@
-.footer {
-    font-family: sans-serif;
-    background: #252525;
-    text-align: center;
-    position: fixed;
-    padding: 20px;
-    color: white;
-    bottom: 0;
-    right: 0;
-    left: 0;
+* {
+    box-sizing: border-box;
+    font-family: 'Alegreya SC', serif;
+    background-color: black;
 }
 
 a {
-    color: white;
     text-decoration: none;
+}
+
+a:visited,
+a:focus {
+    color: #DCDCDD;
+}
+
+a:hover {
+    color: rgb(58, 45, 177);
+}
+
+footer {
+    padding: 0.5rem;
+    color: #DCDCDD;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: bottom center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex;
+}
+
+#right {
+    top: 0;
+    float: right;
+    color: rgb(92, 226, 215);
 }

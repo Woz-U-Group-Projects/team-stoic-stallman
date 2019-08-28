@@ -1,35 +1,101 @@
-.header{
-    position: fixed;
-    top: 0;
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Alegreya SC', serif;
+    font: bold #DCDCDD;
+    position: sticky;
+}
+
+body {
+    margin: 0;
+    font-family: helvetica;
+}
+
+#topBarMenu {
+    position: relative;
+    z-index: 99;
+}
+
+.stickyMenu {
     left: 0;
     right: 0;
+    top: 0;
+    background: #0f0f0f;
+    color: #f0f0f0;
 }
-nav {
-    width: 100%;
-    background: #252525;
+
+.stickyMenu.scrollingBar {
+    position: fixed;
+    z-index: 99;
 }
-ul {
-    text-align: center;
+
+.menuContainer {
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    padding: 0;
+    display: flex;
+    position: relative;
+    background: inherit;
 }
-ul li {
-    list-style: none;
-    display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 20px;
 
+#headerLogo {
+    width: 40px;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    font-weight: 700;
 }
-ul li:hover {
-    background: #333333;
+
+.navBarMenu {
+    display: flex;
+    margin-left: auto;
+    background: inherit;
 }
-a {
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 20px;
-    font-family: sans-serif;
-    color: white;
+
+.navBarMenu a {
     text-decoration: none;
+    color: inherit;
+}
+
+.navBarMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: inherit;
+}
+
+.navBarMenu>ul,
+.navBarMenu>ul>li {
+    display: flex;
+}
+
+.navBarMenu>ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    line-height: 1.2em;
+}
+
+.navBarMenu>ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    line-height: 1.2em;
+    transition: background ease .35s;
+}
+
+.navBarMenu>ul li a:hover {
+    background: rgb(12, 67, 129);
+}
+
+@media(max-width:767px) {
+    .navBarMenu {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+    .navBarMenu>ul,
+    .navBarMenu>ul>li {
+        flex-direction: column;
+        width: 100%;
+    }
 }

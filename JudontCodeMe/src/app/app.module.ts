@@ -15,6 +15,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgSlickComponent } from './ng-slick/ng-slick.component';
+import { AnimatedLogoComponent } from './animated-logo/animated-logo.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { NgSlickComponent } from './ng-slick/ng-slick.component';
     NewsComponent,
     AboutComponent,
     ContactComponent,
-    NgSlickComponent
+    NgSlickComponent,
+    AnimatedLogoComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
