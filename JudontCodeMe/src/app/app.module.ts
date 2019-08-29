@@ -17,6 +17,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgSlickComponent } from './ng-slick/ng-slick.component';
 import { AnimatedLogoComponent } from './animated-logo/animated-logo.component';
 import { HelpComponent } from './help/help.component';
+import { RssComponent } from './rss/rss.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HelpComponent } from './help/help.component';
     ContactComponent,
     NgSlickComponent,
     AnimatedLogoComponent,
-    HelpComponent
+    HelpComponent,
+    RssComponent
   ],
   imports: [
     BrowserModule,
