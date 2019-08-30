@@ -50,12 +50,17 @@ h2 {
 }
 
 .col-1 {
-    width: 8%;
+    width: 32%;
     margin: 4px;
 }
 
 .col-2 {
-    width: 40%;
+    width: 32%;
+    margin: 4px;
+}
+
+.col-3 {
+    width: 32%;
     margin: 4px;
 }
 
@@ -124,4 +129,12 @@ img:hover {
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
+}
+
+#bold {
+    font-weight: bolder;
+}
+
+iframe {
+    width: 90%;
 }
