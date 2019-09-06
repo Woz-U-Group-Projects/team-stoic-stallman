@@ -1,0 +1,346 @@
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+        grid-gap: 1em;
+        grid-auto-rows: 50px;
+        text-align: center;
+        margin-top: 120px;
+    }
+    
+    .container > div {
+        border-radius: 2px;
+    }
+    
+    .box1 {
+        grid-row: 1/4;
+        height: 650px;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    
+    .box2 {
+        grid-row: 1/4;
+        position: static;
+        height: 650px;
+        overflow: auto;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    
+    .box3 {
+        grid-row: 1/2; 
+        margin-right: 30px;
+        padding: 10px 40px 10px 40px;
+        background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+        border-radius: 2px;
+    }
+    
+    .box4 {
+        grid-row: 2/3;
+        margin-right: 30px;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    
+    .box5 {
+        grid-row: 3;
+        margin-right: 30px;
+        height: 518px;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+
+    .agreement {
+            font-size: 14px;
+            font-weight: 700;
+            color: rgb(105, 104, 104);
+        }
+
+        .button {
+            font-size: 14px;
+            font-weight: 700;
+            border: none;
+            background-color: rgb(31, 103, 161);
+            padding: 15px 20px 15px 20px;
+            border-radius: 3px;
+            color: white;
+        }
+        .button:hover {
+            cursor: pointer;
+            background-color: rgb(42, 135, 211);
+        }
+        .button:active {
+            box-shadow: 5px 5px 1px 0px rgb(66, 67, 68);
+            border-bottom-width: 4px;
+            transform: translateY(4px);
+            background: rgb(45, 87, 204);;
+        }
+    </style>
+    
+    <app-header></app-header>
+    
+        <div class="container">
+    
+            <div class="box1">
+                <br>
+                <br>
+                <a href="https://www.teamusa.org/USA-Judo">
+                    <img alt="USA Judo" src="../../assets/usajudo.png" width="100px">
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="https://www.usja.net/">
+                    <img alt="USJA" src="../../assets/usja.png" width="100px">
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="https://www.usjf.com/">
+                    <img alt="USJF" src="../../assets/usjf.png" width="100px">
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="http://panamericanjudo.com/">
+                    <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px">
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="https://www.ijf.org/">
+                    <img alt="IJF" src="../../assets/ijf.png" width="100px">
+                </a>
+            </div>
+    
+            <div class="box2">
+                <div>
+                    <h2>Online Member Form</h2>
+                    <br/> Affiliation (dropdown): <br/><br/>
+                            <select>
+                                    <option value="1">USAJ</option>
+                                    <option value="2">USJA</option>
+                                    <option value="3">USJF</option>
+                                    <option value="4">PJ</option>
+                                    <option value="5">IJF</option>
+                            </select>     
+                            <br/>
+                            <br/> Yudanshakai: <br/><br/>
+                            <select>
+                                    <option value="1">Steve Owen</option>
+                                    <option value="2">Neal Kodama</option>
+                                    <option value="3">Sandra Hauptmann</option>
+                                    <option value="3">Tom Jay</option>
+                                    <option value="3">Conrad Hisaka</option>
+                                    <option value="3">Alberto Fernandez</option>
+                                    <option value="3">Larry Labrador</option>
+                                    <option value="3">John Owens</option>
+                                    <option value="3">Rodney Nakayama</option>
+                                    <option value="3">Nathan Hiraoka</option>
+                                    <option value="3">Mac Takeda</option>
+                                    <option value="3">Boris Munoz</option>
+                                    <option value="3">Jerry Mizuta</option>
+                                    <option value="3">James Murray</option>
+                                    <option value="3">Roland Fernando</option>
+                                    <option value="3">Keith Chu</option>
+                                    <option value="3">Janet Y. Ashida John</option>
+                                    <option value="3">John Schaedler</option>
+                                    <option value="3">Ernest Matsubara</option>
+                                    <option value="3">Dale Swet</option>
+                                    <option value="3">Larry Tsusui</option>
+                                    <option value="3">Nubuo R. Hayashi</option>
+                                    <option value="3">Roy Englert</option>
+                                    <option value="3">Allen Inouye</option>
+                            </select> <br/>
+                            <br/> Club (dropdown): <br/><br/>
+                            <select>
+                                    <option value="1">A. Kolychkine Judo Foundation</option>
+                                    <option value="2">A. Kolychkine Judo Foundation, Inc.</option>
+                                    <option value="3">Academy of Japanese Martial Arts</option>
+                                    <option value="4">Academy of Modern Martial Arts</option>
+                                    <option value="5">After School Judo Academy</option>
+                                    <option value="6">Air Capital Judo Club</option>
+                                    <option value="7">AKA Judo</option>
+                                    <option value="8">Alamo Judo Club</option>
+                                    <option value="9">Albany Kodokan Judo Inc.</option>
+                                    <option value="10">Amedes Judo Academy</option>
+                                    <option value="11">American Judo and Jiu-Jitsu Academy</option>
+                                    <option value="12">Anchorage Dojo</option>
+                                    <option value="13">AP Training Center FL LLC</option>
+                                    <option value="14">Arena Training Center</option>
+                                    <option value="15">Arizona Judo Academy</option>
+                                    <option value="16">Arlington Judo Club</option>
+                                    <option value="17">Army West Point Judo</option>
+                                    <option value="18">Atlanta Judo Midtown</option>
+                                    <option value="19">Axiom Jiu Jitsu/Judo</option>
+                                    <option value="20">Ball State Judo Club</option>
+                                    <option value="21">Barrington Judo Club</option>
+                                    <option value="22">Barstow Judo Club</option>
+                                    <option value="23">Barstow PAL Judo Club</option>
+                                    <option value="24">Becerra Judo & Jujitsu Club</option>
+                                    <option value="25">Belleville Judo Club</option>
+                                    <option value="26">Big Sky Martial Arts Judo Club</option>
+                                    <option value="27">Bismarck Gentle Ways Judo</option>
+                                    <option value="28">Boston Judo Club</option>
+                                    <option value="29">Bristol Yawara Judo Club</option>
+                                    <option value="30">Budokan Judo School</option>
+                                    <option value="31">Bulldog Judo Club</option>
+                                    <option value="32">Bushido Kai America</option>
+                                    <option value="33">Bushido Kai Judo Club</option>
+                                    <option value="34">Cache Valley Judo Club</option>
+                                    <option value="35">Camal Judo</option>
+                                    <option value="36">Capital City Judo</option>
+                                    <option value="37">Capital MMA & Elite Fitness</option>
+                                    <option value="38">Chosen-Sha Judo Academy</option>
+                                    <option value="39">Chu To Bu Judo Club, Inc.</option>
+                                    <option value="40">CMAC - JUDO</option>
+                                    <option value="41">Cupertino Judo Club</option>
+                                    <option value="42">Danzan Ryu Missoula Jujitsu</option>
+                                    <option value="43">DC VA Medical Center Adaptive Judo</option>
+                                    <option value="44">DeLeon Judo Club</option>
+                                    <option value="45">Denton Jr Optimist Judo Club</option>
+                                    <option value="45">DOCS Gym</option>
+                                    <option value="46">Dubuque Judo club</option>
+                                    <option value="47">Dynamo Sports Club</option>
+                                    <option value="48">Eastside Dojo</option>
+                                    <option value="49">El Toro Judo Club</option>
+                                    <option value="50">Elevate Judo & Jiu-Jitsu</option>
+                                    <option value="51">Emerald City Judo Club</option>
+                                    <option value="52">EVOLUTION DOJO</option>
+                                    <option value="53">Fight Factory Gym</option>
+                                    <option value="54">First Baptist Harrah Judo Team</option>
+                                    <option value="55">Fishers YMCA Judo Club</option>
+                                    <option value="56">Fox Valley Judo & Jujitsu Club</option>
+                                    <option value="57">Gardena Judo Club</option>
+                                    <option value="58">Gator Judo Club</option>
+                                    <option value="59">Generation Judo Club</option>
+                                    <option value="60">Godai Judo</option>
+                                    <option value="61">Hanabi Albany Judo</option>
+                                    <option value="62">Hawaii Boys & Girls Club Judo</option>
+                                    <option value="63">Hayastan Judo</option>
+                                    <option value="64">Heart Judo</option>
+                                    <option value="65">Highlands Judo Dojo</option>
+                                    <option value="66">Hill Judo Club</option>
+                                    <option value="67">Hogosha Judo LLC</option>
+                                    <option value="68">Joplin Judo and JiuJitsu</option>
+                                    <option value="69">Judan Judo</option>
+                                    <option value="70">Judan Judo of Toledo</option>
+                                    <option value="71">Judo Club/Team at the University of Hawaii</option>
+                                    <option value="72">Kaizen Judo Dojo</option>
+                                    <option value="72">Kaizen Kan</option>
+                                    <option value="73">Kama Jiu-Jitsu</option>
+                                    <option value="74">Kata Chicago Judo Club</option>
+                                    <option value="75">Kenam's Judo Club</option>
+                                    <option value="76">Kent Schools Judo Team</option>
+                                    <option value="77">Krystek Judo</option>
+                                    <option value="78">Maryland Judo Team</option>
+                                    <option value="79">Mat-Su Judo Inc.</option>
+                                    <option value="80">Matside Judo and Jiujitsu</option>
+                                    <option value="81">Mayo Quanchi Judo and Wrestling</option>
+                                    <option value="82">Mercer Island/Bellevue Judo Dojo</option>
+                                    <option value="83">Metro Orlando JudoKai</option>
+                                    <option value="84">Miami Dade College- N Campus</option>
+                                    <option value="85">Mid-Missouri Judo Club</option>
+                                    <option value="86">Midway Judo Club</option>
+                                    <option value="87">Midwest Jiu Jitsu Academy</option>
+                                    <option value="88">Sempai Judo Academy</option>
+                                    <option value="89">Valley Judo Institute</option>
+                                    <option value="90">Wahadachi Judo Club</option>
+                                    <option value="91">Wall 2 Wall Martial Arts</option>
+                                    <option value="92">Warrior Judo Club</option>
+                                    <option value="93">Washington Judo Club at Georgetown Univeristy</option>
+                                    <option value="94">Waynesville Kodokan Judo Club</option>
+                                    <option value="95">Welcome Mat Judo and Jujitsu</option>
+                                    <option value="96">West Bend Judo Club</option>
+                                    <option value="97">West Central IL Judo</option>
+                                    <option value="98">Yama Judo</option>
+                                    <option value="99">Yawara Force</option>
+                                    <option value="100">Yorkville Judo Club</option>
+                                    <option value="101">Yu-Tora Judo</option>
+                                    <option value="102">Z MATA</option>
+                                    <option value="103">Zenyu Judo Dojo</option>
+                            </select> <br/>
+                            <br/> Rank (dropdown): <br/><br/>
+                            <select>
+                                    <option value="1">Novice (white belt)</option>
+                                    <option value="2">6th Kyu (yellow belt)</option>
+                                    <option value="3">5th Kyu (orange belt)</option>
+                                    <option value="4">4th Kyu (green belt)</option>
+                                    <option value="5">3rd Kyu (brown belt)</option>
+                                    <option value="6">2nd Kyu (brown belt)</option>
+                                    <option value="7">1st Kyu (brown belt)</option>
+                                    <option value="8">1st Dan (black belt)</option>
+                                    <option value="9">2nd Dan (black belt)</option>
+                                    <option value="10">3rd Dan (black belt)</option>
+                                    <option value="11">4th Dan (black belt)</option>
+                                    <option value="12">5th Dan (black belt)</option>
+                                    <option value="13">6th Dan (black belt)</option>
+                                    <option value="14">7th Dan (black belt)</option>
+                                    <option value="15">8th Dan (black belt)</option>
+                                    <option value="16">9th Dan (black belt)</option>
+                                    <option value="17">10th Dan (black belt)</option>
+                            </select> <br/>
+                            <br/> Existing Member Number: <br/>
+                            <input type="text"> <br/>
+                            <br/> Participation (multi-select): <br/>
+                            <input type="text"> <br/>
+                            <br/> First Name, Middle Name, Last Name: <br/>
+                            <input type="text"><input type="text"><input type="text"> <br/>
+                            <br/> Email: <br/>
+                            <input type="text"> <br/>
+                            <br/> Phone: <br/>
+                            <input type="text"> <br/>
+                            <br/> Address: <br/>
+                            <input type="text"> <br/>
+                            <br/> Date of Birth: <br/>
+                            <input type="text"> <br/>
+                            <br/> Age: <br/>
+                            <input type="text"> <br/>
+                            <br/> Gender: <br/>
+                            <input type="text"> <br/>
+                            <br/> Race: <br/>
+                            <select>
+                                    <option value="1">American Indian or Alaska Native</option>
+                                    <option value="2">Asian</option>
+                                    <option value="3">Black or African American</option>
+                                    <option value="3">Hispanic or Latino or Spanish Origin</option>
+                                    <option value="4">Native Hawaiian or Other Pacific Islander</option>
+                                    <option value="5">White</option>
+                            </select> <br/>
+                            <br/> Attendance Expectation (dropdown): <br/>
+                            <input type="text"> <br/>
+                            <br/> Membership Choice: <br/>
+                            <input type="text"> <br/>
+                            <br/> Background Screening: <br/>
+                            <input type="text"> <br/>
+                            <br/> Waiver: <br/>
+                            <input type="button" class="view" value="view"> <br/>
+                            <br/> Code of Conduct: <br/>
+                            <input type="button" class="view" value="view"> <br/>
+                            <div class="agreement"> <input type="checkbox" value="agreement">I have read the Code of Conduct and agree with terms and conditions.</div> <br/>
+                            <br/> <input type="button" class="button" value="submit">
+                        </div>
+                    </div>
+
+                    <a href="paypal">
+                        <div class="box3">
+                            <img alt="USJF" src="../../assets/paypal.png" width="100px">
+                        </div>
+                    </a>
+        
+                        <div class="box4">
+                            <p>Search Frequently Asked Questions</p>
+                        </div>
+        
+                            <div class="box5">
+                                <p>Frequently Asked Questions with Answers</p>
+                            </div>
+        
+                            </div>
+        
+                                <app-footer></app-footer>

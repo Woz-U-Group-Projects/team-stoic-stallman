@@ -1,0 +1,119 @@
+<style>
+    img{
+        float: right;
+        margin-top: 15px;
+        margin-right: 35%;
+    }
+    h2 {
+        color: orange;
+    }
+    h4 {
+        color: rgb(74, 136, 207);
+    }
+    p.a {
+        font-size: 14px;
+        color: rgb(82, 82, 82);
+    }
+    p.b {
+        font-size: 12px;
+        color: rgb(124, 123, 123);
+    }
+    p.c {
+        margin-left: 650px;
+        font-size: 12px;
+        line-height: 40%;
+        color: rgb(124, 123, 123);
+    }
+    a.c {
+        font-size: 12px;
+    }
+    .container {
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+        background-color: #ccc;
+        padding: 40px;
+        border-radius: 2px;
+    }
+    .box1 {
+        border: solid 1px rgb(168, 168, 168);
+        border-radius: 2px;
+    }
+    .box2 {
+        margin-top: 10px;
+        border: solid 1px rgb(168, 168, 168);
+        border-radius: 2px;
+    }
+    .gap {
+        margin-top: 15px;
+    }
+    /*#top {
+        line-height: 40%;
+    }*/
+    #center {
+        margin-top: 30px;
+        margin-left: 650px;
+    }
+    #question {
+        line-height: 40%;
+    }
+    #fill {
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    #create {
+        margin-left: 650px;
+        font-weight: 600;
+    }
+</style>
+    
+    <app-header></app-header>
+
+<div class="container">
+
+    <div class="box1">
+        <!--<div id="top">
+            <h2>Choose a way to pay</h2>
+            <p class="a">PayPal securely processes payments for this website</p>
+        </div>-->
+
+        <a href="https://www.paypal.com/us/home"><img alt="USJF" src="../../assets/paypal.png" width="100px"></a>
+
+        <div id="center">
+            <div id="question">
+                <h4>Have a PayPal account?</h4>
+                <p class="b">Log in to your PayPal account to pay</p>
+            </div>
+            
+            <div id="fill">
+                <p>Email</p>
+                <input>
+
+                <p>PayPal password</p>
+                <input>
+
+                <br><br>
+            
+
+            <button>Log in</button>
+
+            <br><br>
+
+            <a href class="c">forgot your email address or password?</a>
+            </div>
+        </div>
+    </div>
+        
+    <div class="box2">
+        <div class="gap">
+            <a href="https://www.paypal.com/welcome/signup/#/email_password" id="create">Create a PayPal account</a>
+            <p class="c">And pay with your debit or credit card</p>
+        </div>
+    </div>
+
+</div>
+
+    <app-footer></app-footer>
