@@ -8,7 +8,7 @@
         margin-top: 120px;
     }
     
-    .container > div {
+    .container>div {
         border-radius: 2px;
     }
     
@@ -29,7 +29,7 @@
     }
     
     .box3 {
-        grid-row: 1/2; 
+        grid-row: 1/2;
         margin-right: 30px;
         padding: 10px 40px 10px 40px;
         background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
@@ -50,88 +50,91 @@
         padding: 0px 40px 40px 40px;
         background: #eee;
     }
-
+    
     .agreement {
-            font-size: 14px;
-            font-weight: 700;
-            color: rgb(105, 104, 104);
-        }
+        font-size: 14px;
+        font-weight: 700;
+        color: rgb(105, 104, 104);
+    }
+    
+    .button {
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+        background-color: rgb(31, 103, 161);
+        padding: 15px 20px 15px 20px;
+        border-radius: 3px;
+        color: white;
+    }
+    
+    .button:hover {
+        cursor: pointer;
+        background-color: rgb(42, 135, 211);
+    }
+    
+    .button:active {
+        box-shadow: 5px 5px 1px 0px rgb(66, 67, 68);
+        border-bottom-width: 4px;
+        transform: translateY(4px);
+        background: rgb(45, 87, 204);
+        ;
+    }
+</style>
 
-        .button {
-            font-size: 14px;
-            font-weight: 700;
-            border: none;
-            background-color: rgb(31, 103, 161);
-            padding: 15px 20px 15px 20px;
-            border-radius: 3px;
-            color: white;
-        }
-        .button:hover {
-            cursor: pointer;
-            background-color: rgb(42, 135, 211);
-        }
-        .button:active {
-            box-shadow: 5px 5px 1px 0px rgb(66, 67, 68);
-            border-bottom-width: 4px;
-            transform: translateY(4px);
-            background: rgb(45, 87, 204);;
-        }
-    </style>
-    
-    <app-header></app-header>
-    
-        <div class="container">
-    
-            <div class="box1">
-                <br>
-                <br>
-                <a href="https://www.teamusa.org/USA-Judo">
-                    <img alt="USA Judo" src="../../assets/usajudo.png" width="100px">
-                </a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <a href="https://www.usja.net/">
-                    <img alt="USJA" src="../../assets/usja.png" width="100px">
-                </a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <a href="https://www.usjf.com/">
-                    <img alt="USJF" src="../../assets/usjf.png" width="100px">
-                </a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <a href="http://panamericanjudo.com/">
-                    <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px">
-                </a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <a href="https://www.ijf.org/">
-                    <img alt="IJF" src="../../assets/ijf.png" width="100px">
-                </a>
-            </div>
-    
-            <div class="box2">
-                <div>
-                    <h2>Online Member Form</h2>
-                    <br/> Affiliation (dropdown): <br/><br/>
-                            <select>
+<app-header></app-header>
+
+<div class="container">
+
+    <div class="box1">
+        <br>
+        <br>
+        <a href="https://www.teamusa.org/USA-Judo">
+            <img alt="USA Judo" src="../../assets/usajudo.png" width="100px">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.usja.net/">
+            <img alt="USJA" src="../../assets/usja.png" width="100px">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.usjf.com/">
+            <img alt="USJF" src="../../assets/usjf.png" width="100px">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="http://panamericanjudo.com/">
+            <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.ijf.org/">
+            <img alt="IJF" src="../../assets/ijf.png" width="100px">
+        </a>
+    </div>
+
+    <div class="box2">
+        <div>
+            <h2>Online Member Form</h2>
+            <br/> Affiliation (dropdown): <br/><br/>
+            <select>
                                     <option value="1">USAJ</option>
                                     <option value="2">USJA</option>
                                     <option value="3">USJF</option>
                                     <option value="4">PJ</option>
                                     <option value="5">IJF</option>
-                            </select>     
-                            <br/>
-                            <br/> Yudanshakai: <br/><br/>
-                            <select>
+                            </select>
+            <br/>
+            <br/> Yudanshakai: <br/><br/>
+            <select>
                                     <option value="1">Steve Owen</option>
                                     <option value="2">Neal Kodama</option>
                                     <option value="3">Sandra Hauptmann</option>
@@ -157,8 +160,8 @@
                                     <option value="3">Roy Englert</option>
                                     <option value="3">Allen Inouye</option>
                             </select> <br/>
-                            <br/> Club (dropdown): <br/><br/>
-                            <select>
+            <br/> Club (dropdown): <br/><br/>
+            <select>
                                     <option value="1">A. Kolychkine Judo Foundation</option>
                                     <option value="2">A. Kolychkine Judo Foundation, Inc.</option>
                                     <option value="3">Academy of Japanese Martial Arts</option>
@@ -265,8 +268,8 @@
                                     <option value="102">Z MATA</option>
                                     <option value="103">Zenyu Judo Dojo</option>
                             </select> <br/>
-                            <br/> Rank (dropdown): <br/><br/>
-                            <select>
+            <br/> Rank (dropdown): <br/><br/>
+            <select>
                                     <option value="1">Novice (white belt)</option>
                                     <option value="2">6th Kyu (yellow belt)</option>
                                     <option value="3">5th Kyu (orange belt)</option>
@@ -285,26 +288,26 @@
                                     <option value="16">9th Dan (black belt)</option>
                                     <option value="17">10th Dan (black belt)</option>
                             </select> <br/>
-                            <br/> Existing Member Number: <br/>
-                            <input type="text"> <br/>
-                            <br/> Participation (multi-select): <br/>
-                            <input type="text"> <br/>
-                            <br/> First Name, Middle Name, Last Name: <br/>
-                            <input type="text"><input type="text"><input type="text"> <br/>
-                            <br/> Email: <br/>
-                            <input type="text"> <br/>
-                            <br/> Phone: <br/>
-                            <input type="text"> <br/>
-                            <br/> Address: <br/>
-                            <input type="text"> <br/>
-                            <br/> Date of Birth: <br/>
-                            <input type="text"> <br/>
-                            <br/> Age: <br/>
-                            <input type="text"> <br/>
-                            <br/> Gender: <br/>
-                            <input type="text"> <br/>
-                            <br/> Race: <br/>
-                            <select>
+            <br/> Existing Member Number: <br/>
+            <input type="text"> <br/>
+            <br/> Participation (multi-select): <br/>
+            <input type="text"> <br/>
+            <br/> First Name, Middle Name, Last Name: <br/>
+            <input type="text"><input type="text"><input type="text"> <br/>
+            <br/> Email: <br/>
+            <input type="text"> <br/>
+            <br/> Phone: <br/>
+            <input type="text"> <br/>
+            <br/> Address: <br/>
+            <input type="text"> <br/>
+            <br/> Date of Birth: <br/>
+            <input type="text"> <br/>
+            <br/> Age: <br/>
+            <input type="text"> <br/>
+            <br/> Gender: <br/>
+            <input type="text"> <br/>
+            <br/> Race: <br/>
+            <select>
                                     <option value="1">American Indian or Alaska Native</option>
                                     <option value="2">Asian</option>
                                     <option value="3">Black or African American</option>
@@ -312,35 +315,35 @@
                                     <option value="4">Native Hawaiian or Other Pacific Islander</option>
                                     <option value="5">White</option>
                             </select> <br/>
-                            <br/> Attendance Expectation (dropdown): <br/>
-                            <input type="text"> <br/>
-                            <br/> Membership Choice: <br/>
-                            <input type="text"> <br/>
-                            <br/> Background Screening: <br/>
-                            <input type="text"> <br/>
-                            <br/> Waiver: <br/>
-                            <input type="button" class="view" value="view"> <br/>
-                            <br/> Code of Conduct: <br/>
-                            <input type="button" class="view" value="view"> <br/>
-                            <div class="agreement"> <input type="checkbox" value="agreement">I have read the Code of Conduct and agree with terms and conditions.</div> <br/>
-                            <br/> <input type="button" class="button" value="submit">
-                        </div>
-                    </div>
+            <br/> Attendance Expectation (dropdown): <br/>
+            <input type="text"> <br/>
+            <br/> Membership Choice: <br/>
+            <input type="text"> <br/>
+            <br/> Background Screening: <br/>
+            <input type="text"> <br/>
+            <br/> Waiver: <br/>
+            <input type="button" class="view" value="view"> <br/>
+            <br/> Code of Conduct: <br/>
+            <input type="button" class="view" value="view"> <br/>
+            <div class="agreement"> <input type="checkbox" value="agreement">I have read the Code of Conduct and agree with terms and conditions.</div> <br/>
+            <br/> <input type="button" class="button" value="submit">
+        </div>
+    </div>
 
-                    <a href="paypal">
-                        <div class="box3">
-                            <img alt="USJF" src="../../assets/paypal.png" width="100px">
-                        </div>
-                    </a>
-        
-                        <div class="box4">
-                            <p>Search Frequently Asked Questions</p>
-                        </div>
-        
-                            <div class="box5">
-                                <p>Frequently Asked Questions with Answers</p>
-                            </div>
-        
-                            </div>
-        
-                                <app-footer></app-footer>
+    <a href="paypal">
+        <div class="box3">
+            <img alt="USJF" src="../../assets/paypal.png" width="100px">
+        </div>
+    </a>
+
+    <div class="box4">
+        <p>Search Frequently Asked Questions</p>
+    </div>
+
+    <div class="box5">
+        <p>Frequently Asked Questions with Answers</p>
+    </div>
+
+</div>
+
+<app-footer></app-footer>

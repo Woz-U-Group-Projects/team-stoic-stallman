@@ -33,7 +33,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'help', component: HelpComponent},
   {path: 'paypal', component: PaypalComponent},
-  {path: '',redirectTo: '/home', pathMatch: 'full'}
+  {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
