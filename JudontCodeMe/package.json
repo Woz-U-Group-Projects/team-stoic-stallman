@@ -22,9 +22,10 @@
         "@fullcalendar/angular": "^4.3.1",
         "@fullcalendar/core": "^4.3.1",
         "@fullcalendar/daygrid": "^4.3.0",
+        "fs": "0.0.1-security",
         "jquery": "^3.4.1",
         "ngx-slick-carousel": "^0.4.6",
-        "rxjs": "~6.5.3",
+        "rxjs": "^6.5.3",
         "slick-carousel": "^1.8.1",
         "tslib": "^1.10.0",
         "zone.js": "~0.10.2"
