@@ -1,140 +1,457 @@
 <style>
-    .container {
-        display: grid;
-        grid-template-columns: 10% 50% 40%;
-        grid-gap: 1em;
-        grid-auto-rows: 50px;
-        text-align: center;
-        margin-top: 120px;
+    @media screen and (max-width: 583px){
+        .container {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 1em;
+            text-align: center;
+        }
+
+        .box1 {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            margin: 0 32px 0 0;
+            padding: 10px 0 5px 0;
+        }
+        .box2 {
+            margin-right: 32px;
+            grid-column: 1/4;
+            grid-row: 3;
+            height: 500px;
+            padding: 0px 0px 80px 0px;
+            overflow: auto;
+        }
+        .box3 {
+            grid-column: 1;
+            grid-row: 2;
+            background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+            border-radius: 2px;
+            padding: 20px 0 20px 0;
+
+        }
+        .box4 {
+            margin-right: 17px;
+            margin-left: 3px;
+            grid-column: 2;
+            grid-row: 2;
+            overflow: auto;
+        }
+        .box5 {
+            grid-column: 1/4;
+            grid-row: 4;
+            overflow: auto;
+            height: 400px;
+            padding: 0px 40px 80px 40px;
+            margin: 0 32px 0 0;
+        }
+
+        .align {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        img.affiliates {
+            list-style: none;
+            display: inline-block;
+            padding: 20px 20px 19px 20px;
+        }
+    }
+
+    @media screen and (min-width: 584px) and (max-width: 828px) {
+        .container {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 1em;
+            text-align: center;
+        }
+
+        .box1 {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            margin: 0 32px 0 0;
+            padding: 10px 0 5px 0;
+        }
+        .box2 {
+            margin-right: 32px;
+            grid-column: 1/4;
+            grid-row: 3;
+            height: 500px;
+            padding: 0px 0px 80px 0px;
+            overflow: auto;
+        }
+        .box3 {
+            grid-column: 1;
+            grid-row: 2;
+            background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+            border-radius: 2px;
+            padding: 10px 0 10px 0;
+        }
+        .box4 {
+            margin-right: 17px;
+            margin-left: 3px;
+            grid-column: 2;
+            grid-row: 2;
+            overflow: auto;
+        }
+        .box5 {
+            grid-column: 1/4;
+            grid-row: 4;
+            overflow: auto;
+            height: 400px;
+            padding: 0px 40px 80px 40px;
+            margin: 0 32px 0 0;
+        }
+
+        .align {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        img.affiliates {
+            list-style: none;
+            display: inline-block;
+            padding: 20px 20px 19px 20px;
+        }
+    }
+
+    @media screen and (min-width: 829px) and (max-width: 1500px){
+        .container {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 1em;
+            text-align: center;
+        }
+
+        .box1 {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            margin: 0 32px 0 0;
+            padding: 10px 0 5px 0;
+        }
+        .box2 {
+            margin-right: 32px;
+            grid-column: 1/4;
+            grid-row: 3;
+            height: 500px;
+            padding: 0px 0px 80px 0px;
+            overflow: auto;
+        }
+        .box3 {
+            grid-column: 1;
+            grid-row: 2;
+            background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+            border-radius: 2px;
+            padding: 10px 0 10px 0;
+        }
+        .box4 {
+            margin-right: 17px;
+            grid-column: 2;
+            grid-row: 2;
+            overflow: auto;
+        }
+        .box5 {
+            margin: 0 32px 0 0;
+            grid-column: 1/4;
+            grid-row: 4;
+            overflow: auto;
+            height: 400px;
+            padding: 0px 40px 80px 40px;
+        }
+        .align {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        img.affiliates {
+            list-style: none;
+            display: inline-block;
+            padding: 20px 20px 19px 20px;
+        }
+    }
+
+    @media screen and (min-width: 1501px) and (max-width: 1678px){
+        .container {
+            margin-top: 35px;
+            margin-bottom: 550px;
+            grid-auto-rows: 50px;
+            display: grid;
+            grid-template-columns: 10% 50% 40%;
+            grid-gap: 1em;
+            text-align: center;
+        }
+        .box1 {
+            grid-row: 1/4;
+            height: 630px;
+            padding: 30px;
+            background: #eee;
+        }
+
+        .box2 {
+            grid-row: 1/4;
+            position: static;
+            height: 650px;
+            overflow: auto;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+        
+        .box3 {
+            grid-row: 1/2; 
+            margin-right: 30px;
+            padding: 10px 40px 10px 40px;
+            background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+            border-radius: 2px;
+        }
+        
+        .box4 {
+            grid-row: 2/3;
+            margin-right: 30px;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+        
+        .box5 {
+            grid-row: 3;
+            margin-right: 30px;
+            height: 518px;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+        
+        img.affiliates {
+            margin-top: 40px;
+        }
+    }
+
+    @media screen and (min-width: 1679px) and (max-width: 1699px){
+        .container {
+            margin-top: 35px;
+            margin-bottom: 550px;
+            grid-auto-rows: 50px;
+            display: grid;
+            grid-template-columns: 10% 50% 40%;
+            grid-gap: 1em;
+            text-align: center;
+        }
+
+        .box1 {
+            grid-row: 1/4;
+            height: 666px;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+        .box2 {
+            grid-row: 1/4;
+            position: static;
+            height: 666px;
+            overflow: auto;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+        
+        .box3 {
+            grid-row: 1/2;
+            padding: 10px 40px 10px 40px;
+            background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+            border-radius: 2px;
+            margin-right: 32px;
+        }
+        
+        .box4 {
+            grid-row: 2/3;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+            margin-right: 32px;
+        }
+        
+        .box5 {
+            grid-row: 3;
+            height: 535px;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+            margin-right: 32px;
+        }
+
+        img.affiliates {
+            margin-top: 55px;
+        }
+    }
+
+    @media screen and (min-width: 1700px) {
+        .container {
+            margin-top: 120px;
+            grid-auto-rows: 50px;
+            display: grid;
+            grid-template-columns: 10% 50% 40%;
+            grid-gap: 1em;
+            text-align: center;
+        }
+
+        .box1 {
+            grid-row: 1/4;
+            height: 650px;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+
+            .box2 {
+            grid-row: 1/4;
+            position: static;
+            height: 650px;
+            overflow: auto;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+        
+        .box3 {
+            grid-row: 1/2; 
+            margin-right: 30px;
+            padding: 10px 40px 10px 40px;
+            background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+            border-radius: 2px;
+        }
+        
+        .box4 {
+            grid-row: 2/3;
+            margin-right: 30px;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+        
+        .box5 {
+            grid-row: 3;
+            margin-right: 30px;
+            height: 518px;
+            padding: 0px 40px 40px 40px;
+            background: #eee;
+        }
+
+        img.affiliates {
+            margin-top: 55px;
+        }
     }
     
-    .container>div {
-        border-radius: 2px;
-    }
-    
-    .box1 {
-        grid-row: 1/4;
-        height: 650px;
-        padding: 0px 40px 40px 40px;
-        background: #eee;
-    }
-    
-    .box2 {
-        grid-row: 1/4;
-        position: static;
-        height: 650px;
-        overflow: auto;
-        padding: 0px 40px 40px 40px;
-        background: #eee;
-    }
-    
-    .box3 {
-        grid-row: 1/2;
-        margin-right: 30px;
-        padding: 10px 40px 10px 40px;
-        background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
-        border-radius: 2px;
-    }
-    
-    .box4 {
-        grid-row: 2/3;
-        margin-right: 30px;
-        padding: 0px 40px 40px 40px;
-        background: #eee;
-    }
-    
-    .box5 {
-        grid-row: 3;
-        margin-right: 30px;
-        height: 518px;
-        padding: 0px 40px 40px 40px;
-        background: #eee;
+    .container > div {
+            background: #eee;
+            border-radius: 2px;
     }
     
     .agreement {
-        font-size: 14px;
-        font-weight: 700;
-        color: rgb(105, 104, 104);
-    }
+            font-size: 14px;
+            font-weight: 700;
+            color: rgb(105, 104, 104);
+        }
+
+        .button {
+            font-size: 14px;
+            font-weight: 700;
+            border: none;
+            background-color: rgb(31, 103, 161);
+            padding: 15px 20px 15px 20px;
+            border-radius: 3px;
+            color: white;
+        }
+        .button:hover {
+            cursor: pointer;
+            background-color: rgb(42, 135, 211);
+        }
+        .button:active {
+            box-shadow: 5px 5px 1px 0px rgb(66, 67, 68);
+            border-bottom-width: 4px;
+            transform: translateY(4px);
+            background: rgb(45, 87, 204);;
+        }
+
+        .affiliates:hover {
+            /* Start the shake animation and make the animation last for 0.5 seconds */
+            animation: shake 0.5s;
+            /* When the animation is finished, start again */
+            animation-iteration-count: infinite;
+            }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+    </style>
     
-    .button {
-        font-size: 14px;
-        font-weight: 700;
-        border: none;
-        background-color: rgb(31, 103, 161);
-        padding: 15px 20px 15px 20px;
-        border-radius: 3px;
-        color: white;
-    }
+    <app-header></app-header>
     
-    .button:hover {
-        cursor: pointer;
-        background-color: rgb(42, 135, 211);
-    }
+        <div class="container">
+            <div class="box1">
+                <div class="align">
+                    <a href="https://www.teamusa.org/USA-Judo" class="affiliates">
+                        <img alt="USA Judo" src="../../assets/usajudo.png" width="100px" class="affiliates">
+                        </a>
+                        <a href="https://www.usja.net/">
+                            <img alt="USJA" src="../../assets/usja.png" width="100px" class="affiliates">
+                            </a>
+                            <a href="https://www.usjf.com/">
+                                <img alt="USJF" src="../../assets/usjf.png" width="100px" class="affiliates">
+                                </a>
+                                <a href="http://panamericanjudo.com/">
+                                    <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px" class="affiliates">
+                                    </a>
+                                    <a href="https://www.ijf.org/">
+                                        <img alt="IJF" src="../../assets/ijf.png" width="100px" class="affiliates">
+                                        </a>
+                </div>
+            </div>
     
-    .button:active {
-        box-shadow: 5px 5px 1px 0px rgb(66, 67, 68);
-        border-bottom-width: 4px;
-        transform: translateY(4px);
-        background: rgb(45, 87, 204);
-        ;
-    }
-</style>
-
-<app-header></app-header>
-
-<div class="container">
-
-    <div class="box1">
-        <br>
-        <br>
-        <a href="https://www.teamusa.org/USA-Judo">
-            <img alt="USA Judo" src="../../assets/usajudo.png" width="100px">
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="https://www.usja.net/">
-            <img alt="USJA" src="../../assets/usja.png" width="100px">
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="https://www.usjf.com/">
-            <img alt="USJF" src="../../assets/usjf.png" width="100px">
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="http://panamericanjudo.com/">
-            <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px">
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="https://www.ijf.org/">
-            <img alt="IJF" src="../../assets/ijf.png" width="100px">
-        </a>
-    </div>
-
-    <div class="box2">
-        <div>
-            <h2>Online Member Form</h2>
-            <br/> Affiliation (dropdown): <br/><br/>
-            <select>
+            <div class="box2">
+                <div>
+                    <h2>Online Member Form</h2>
+                    <br/> Affiliation (dropdown): <br/><br/>
+                            <select>
                                     <option value="1">USAJ</option>
                                     <option value="2">USJA</option>
                                     <option value="3">USJF</option>
                                     <option value="4">PJ</option>
                                     <option value="5">IJF</option>
-                            </select>
-            <br/>
-            <br/> Yudanshakai: <br/><br/>
-            <select>
+                            </select>     
+                            <br/>
+                            <br/> Yudanshakai: <br/><br/>
+                            <select>
                                     <option value="1">Steve Owen</option>
                                     <option value="2">Neal Kodama</option>
                                     <option value="3">Sandra Hauptmann</option>
@@ -160,8 +477,8 @@
                                     <option value="3">Roy Englert</option>
                                     <option value="3">Allen Inouye</option>
                             </select> <br/>
-            <br/> Club (dropdown): <br/><br/>
-            <select>
+                            <br/> Club (dropdown): <br/><br/>
+                            <select>
                                     <option value="1">A. Kolychkine Judo Foundation</option>
                                     <option value="2">A. Kolychkine Judo Foundation, Inc.</option>
                                     <option value="3">Academy of Japanese Martial Arts</option>
@@ -268,8 +585,8 @@
                                     <option value="102">Z MATA</option>
                                     <option value="103">Zenyu Judo Dojo</option>
                             </select> <br/>
-            <br/> Rank (dropdown): <br/><br/>
-            <select>
+                            <br/> Rank (dropdown): <br/><br/>
+                            <select>
                                     <option value="1">Novice (white belt)</option>
                                     <option value="2">6th Kyu (yellow belt)</option>
                                     <option value="3">5th Kyu (orange belt)</option>
@@ -288,26 +605,26 @@
                                     <option value="16">9th Dan (black belt)</option>
                                     <option value="17">10th Dan (black belt)</option>
                             </select> <br/>
-            <br/> Existing Member Number: <br/>
-            <input type="text"> <br/>
-            <br/> Participation (multi-select): <br/>
-            <input type="text"> <br/>
-            <br/> First Name, Middle Name, Last Name: <br/>
-            <input type="text"><input type="text"><input type="text"> <br/>
-            <br/> Email: <br/>
-            <input type="text"> <br/>
-            <br/> Phone: <br/>
-            <input type="text"> <br/>
-            <br/> Address: <br/>
-            <input type="text"> <br/>
-            <br/> Date of Birth: <br/>
-            <input type="text"> <br/>
-            <br/> Age: <br/>
-            <input type="text"> <br/>
-            <br/> Gender: <br/>
-            <input type="text"> <br/>
-            <br/> Race: <br/>
-            <select>
+                            <br/> Existing Member Number: <br/>
+                            <input type="text"> <br/>
+                            <br/> Participation (multi-select): <br/>
+                            <input type="text"> <br/>
+                            <br/> First Name, Middle Name, Last Name: <br/>
+                            <input type="text"><input type="text"><input type="text"> <br/>
+                            <br/> Email: <br/>
+                            <input type="text"> <br/>
+                            <br/> Phone: <br/>
+                            <input type="text"> <br/>
+                            <br/> Address: <br/>
+                            <input type="text"> <br/>
+                            <br/> Date of Birth: <br/>
+                            <input type="text"> <br/>
+                            <br/> Age: <br/>
+                            <input type="text"> <br/>
+                            <br/> Gender: <br/>
+                            <input type="text"> <br/>
+                            <br/> Race: <br/>
+                            <select>
                                     <option value="1">American Indian or Alaska Native</option>
                                     <option value="2">Asian</option>
                                     <option value="3">Black or African American</option>
@@ -315,35 +632,35 @@
                                     <option value="4">Native Hawaiian or Other Pacific Islander</option>
                                     <option value="5">White</option>
                             </select> <br/>
-            <br/> Attendance Expectation (dropdown): <br/>
-            <input type="text"> <br/>
-            <br/> Membership Choice: <br/>
-            <input type="text"> <br/>
-            <br/> Background Screening: <br/>
-            <input type="text"> <br/>
-            <br/> Waiver: <br/>
-            <input type="button" class="view" value="view"> <br/>
-            <br/> Code of Conduct: <br/>
-            <input type="button" class="view" value="view"> <br/>
-            <div class="agreement"> <input type="checkbox" value="agreement">I have read the Code of Conduct and agree with terms and conditions.</div> <br/>
-            <br/> <input type="button" class="button" value="submit">
-        </div>
-    </div>
+                            <br/> Attendance Expectation (dropdown): <br/>
+                            <input type="text"> <br/>
+                            <br/> Membership Choice: <br/>
+                            <input type="text"> <br/>
+                            <br/> Background Screening: <br/>
+                            <input type="text"> <br/>
+                            <br/> Waiver: <br/>
+                            <input type="button" class="view" value="view"> <br/>
+                            <br/> Code of Conduct: <br/>
+                            <input type="button" class="view" value="view"> <br/>
+                            <div class="agreement"> <input type="checkbox" value="agreement">I have read the Code of Conduct and agree with terms and conditions.</div> <br/>
+                            <br/> <input type="button" class="button" value="submit">
+                        </div>
+                    </div>
 
-    <a href="paypal">
-        <div class="box3">
-            <img alt="USJF" src="../../assets/paypal.png" width="100px">
-        </div>
-    </a>
-
-    <div class="box4">
-        <p>Search Frequently Asked Questions</p>
-    </div>
-
-    <div class="box5">
-        <p>Frequently Asked Questions with Answers</p>
-    </div>
-
-</div>
-
-<app-footer></app-footer>
+                    <a href="paypal">
+                        <div class="box3">
+                            <img alt="" src="../../assets/paypal.png" width="100px">
+                        </div>
+                    </a>
+        
+                        <div class="box4">
+                            <p>Search Frequently Asked Questions</p>
+                        </div>
+        
+                            <div class="box5">
+                                <p>Frequently Asked Questions with Answers</p>
+                            </div>
+        
+                            </div>
+        
+                                <app-footer></app-footer>

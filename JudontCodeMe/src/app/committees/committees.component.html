@@ -1,0 +1,336 @@
+<style>
+        @media screen and (max-height: 1050px) {
+            .container {
+                margin-top: 95px;
+            }
+            .box1 {
+                padding-left: 30px;
+            }
+        }
+    
+            @media screen and (min-height: 1080px) {
+            .container {
+                margin-top: 110px;
+            }
+            .box1 {
+                padding-left: 40px;
+            }
+        }
+    
+        .container {
+            display: grid;
+            grid-template-columns: 10% 40% 50%;
+            grid-gap: 1em;
+        }
+        
+        .container > div {
+            background: #eee;
+            border-radius: 2px;
+        }
+        
+        .box1 {
+            grid-row: 1/3;
+        }
+        .box2 {
+            grid-row: 1/3;
+            position: static;
+            height: 730px;
+            overflow: auto;
+        }
+        .box3 {
+            margin-right: 30px; 
+            padding-left: 40px;
+        }
+        .box4 {
+            margin-right: 30px;
+            padding-left: 40px;
+            grid-column: 3;
+        }
+    
+        /* Committees */
+    
+        img {
+            margin-top: 10px; 
+            border-radius: 2px;
+        }
+        .comm {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-row-gap: .2em;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #first {
+            margin-top: 45px;
+            font-weight: 750;
+            color: rgb(47, 47, 47);
+        }
+        #second {
+            font-weight: 700;
+            font-size: 15px;
+            color: rgb(30, 78, 133);
+        }
+    
+        /* Committees indiv. */
+        a {
+            text-decoration: none;
+        }
+    
+        .desc {
+            border: solid 2px rgb(45, 91, 177);
+            margin-left: 1px;
+            margin-right: 1px;
+            height: 150px;
+        }
+    
+        .mission {
+            margin-right: 50px;
+        }
+    
+        .story {
+            margin-right: 50px;
+        }
+    
+        /* Text & Nav */
+    
+        .navigation {
+            display: grid;
+            grid-template-columns: 10% 25% 60%;
+        }
+        .number {
+            grid-row: 30;
+            grid-column: 2/4;
+            display: grid;
+            grid-template-columns: 20% 20% 20%;
+            position: fixed;
+            width: 300px;
+            top: 731px;
+            padding-top: 40px;
+            padding-left: 300px;
+            padding-right: 50px;
+            padding-bottom:40px;
+            background-color: #eee;
+        }
+        .circle-one {
+            padding: 6px;
+            width: 0px;
+            border: solid 1px rgb(24, 98, 141);
+            border-radius: 50px;
+        }
+        .circle-two {
+            padding: 6px;
+            width: 0px;
+            background-color: #eee;
+            background-image:
+            radial-gradient(
+            circle closest-side,
+            rgb(176, 209, 252),
+            #97e2f0,
+            rgb(0, 174, 255)
+            );
+            border: solid 1px rgb(24, 98, 141);
+            border-radius: 50px;
+            box-shadow: 0 0 5px 3px rgb(128, 236, 255);
+        }
+    
+        .circle-one:hover {
+            padding: 6px;
+            width: 0px;
+            background-color: #eee;
+            background-image:
+            radial-gradient(
+            circle closest-side,
+            rgb(176, 209, 252),
+            #97e2f0,
+            rgb(0, 174, 255)
+            );
+            border: solid 1px rgb(24, 98, 141);
+            border-radius: 50px;
+            box-shadow: 0 0 5px 3px rgb(128, 236, 255);
+        }
+
+        #left {
+            margin-top: 10px;
+            margin-left: 30px;
+            color: rgb(49, 49, 49);
+        }
+        #left2 {
+            margin-top: 27px;
+            font-weight: 700;
+            color: rgb(49, 49, 49);
+        }
+        #center {
+            color: rgb(49, 49, 49);
+            text-align: left;
+        }
+        #right {
+            color: rgb(49, 49, 49);
+            margin-top: 15px;
+            text-align: center;
+        }
+        #right2 {
+            margin-top: 30px;
+            color: rgb(49, 49, 49);
+            font-weight: 700;
+            text-align: right;
+        }
+    
+        </style>
+            
+            <app-header></app-header>
+            
+            <div class="container">
+                    <div class="box1">
+                        <br>
+                        <br>
+                        <a href="https://www.teamusa.org/USA-Judo">
+                            <img alt="USA Judo" src="../../assets/usajudo.png" width="100px">
+                        </a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="https://www.usja.net/">
+                            <img alt="USJA" src="../../assets/usja.png" width="100px">
+                        </a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="https://www.usjf.com/">
+                            <img alt="USJF" src="../../assets/usjf.png" width="100px">
+                        </a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="http://panamericanjudo.com/">
+                            <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px">
+                        </a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="https://www.ijf.org/">
+                            <img alt="IJF" src="../../assets/ijf.png" width="100px">
+                        </a>
+                    </div>
+                        <div class="box2">
+                            <div class="navigation">
+                            
+                            <a href="officers">
+                            <div id="left"><img alt="IJF" src="../../assets/arrow-left.png" width="30px"></div>
+                            </a>
+                                           
+                            <a href="officers">
+                            <div id="left2">Officers</div>
+                            </a>
+
+                            <h1 id="center">Committees</h1>
+                            
+                            </div>
+                            
+    
+                            <div class="comm">
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Albert <br> Aoki</p>
+                                        <p id="second">Promotion Chairman</p>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Ray <br> Imada</p>
+                                        <p id="second">Promotion VP</p>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Rolann <br> Regidor</p>
+                                        <p id="second">Promotion Secretary</p>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Sheldon <br> Konno</p>
+                                        <p id="second">Referee Chairman</p>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Darcy <br> Motoda</p>
+                                        <p id="second">Kata Chairwoman</p>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Steven <br> Hall</p>
+                                        <p id="second">Kata Chairman</p>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Roy <br> Kawaji</p>
+                                        <p id="second">Development Chairman</p>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Dean <br> Shiraki</p>
+                                        <p id="second">Tournament Director</p>
+                                    </div>
+                                </a>
+
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Travis <br> Kono</p>
+                                        <p id="second">Registration Director</p>
+                                    </div>
+                                </a>
+
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Aaron <br> Lee</p>
+                                        <p id="second">Scholarship Committee</p>
+                                    </div>
+                                </a>
+
+                                <a href="">
+                                    <div class="desc">
+                                        <p id="first">Nathan <br> Lee</p>
+                                        <p id="second">Public Relations</p>
+                                    </div>
+                                </a>
+    
+                                <div class="number">
+                                <a href="officers"><div class="circle-one"></div></a>
+                                <a href="committees"><div class="circle-two"></div></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                
+                            <div class="box3">
+                                <h1>Mission</h1>
+                                <div class="mission">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus vitae urna dapibus fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam placerat ullamcorper libero sit amet mattis. Maecenas nec sapien nunc. In non feugiat lorem. Vivamus sit amet orci eu justo imperdiet scelerisque nec efficitur felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed mollis augue at urna feugiat, sit amet sagittis urna venenatis. Nam lobortis malesuada pharetra. Nam laoreet ipsum vitae ligula bibendum condimentum. Nulla vehicula odio lorem, pellentesque viverra libero porta non. Integer faucibus vulputate neque. Aenean eu porta justo.
+                                </div>
+                            </div>
+                
+                                <div class="box4">
+                                    <h1>Our Story</h1>
+                                    <div class="story">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus vitae urna dapibus fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam placerat ullamcorper libero sit amet mattis. Maecenas nec sapien nunc. In non feugiat lorem. Vivamus sit amet orci eu justo imperdiet scelerisque nec efficitur felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed mollis augue at urna feugiat, sit amet sagittis urna venenatis. Nam lobortis malesuada pharetra. Nam laoreet ipsum vitae ligula bibendum condimentum. Nulla vehicula odio lorem, pellentesque viverra libero porta non. Integer faucibus vulputate neque. Aenean eu porta justo.
+    
+                                    Fusce luctus ac nunc ac dignissim. Nullam ut erat aliquet, cursus quam vel, fringilla neque. Etiam at sollicitudin massa. Pellentesque ac augue libero. Sed eget turpis magna. Donec ut nunc dictum, tempor tortor in, aliquet nibh. Sed quis erat dignissim, molestie nisi eget, euismod eros. Aenean porttitor ante velit, et bibendum tellus fermentum quis. Suspendisse egestas lacus quis mauris fringilla, sed volutpat tellus pulvinar. Donec eget velit velit. Integer nisi nunc, elementum ac nisl non, rutrum cursus metus. Aliquam nisi eros, ornare a ornare id, cursus eget enim.
+                                    </div>
+                                </div>
+        
+            <app-footer></app-footer>

@@ -1,113 +1,575 @@
-<div class="container-top">
-    <h1>You have ukemi on American Judo Alliance!</h1>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap');
-    </style>
-    <app-header></app-header>
-</div>
+<style>
+    
+    @media screen and (max-width:950px){
+        .container {
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .box1 {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .box2 {
+            width: 100%;
+            margin: 0 auto;
+            height: 336px;
+            padding: 0;
+        }
+        .box3 {
+            width: 100%;
+            height: 336px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .box4 {
+            width: 100%;
+            height: 395px;
+            margin-top: 20px;
+            padding: 0;
+            overflow: auto;
+        }
+        .box5 {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            padding: 0;
+            overflow: auto;
+        }
+        .box6 {
+            width: 100%;
+            margin-top: 20px;
+            padding: 0;
+        }
 
-<div class="grid">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Caudex&display=swap');
-    </style>
-    <div class="col-1">
-        <aside class="module">
-            <a class="active"></a>
-            <h2>Affiliates</h2>
-            <br>
-            <a href="https://www.teamusa.org/USA-Judo" target="_blank"> <img alt="USA Judo" src="../../assets/usajudo.png" width="100px">
-            </a> <br> <br>
-            <a href="https://www.usja.net/" target="_blank"> <img alt="USJA" src="../../assets/usja.png" width="100px">
-            </a> <br> <br>
-            <a href="https://www.usjf.com/" target="_blank"> <img alt="USJF" src="../../assets/usjf.png" width="100px">
-            </a> <br> <br>
-            <a href="http://panamericanjudo.com/" target="_blank"> <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px">
-            </a> <br> <br>
-            <a href="https://www.ijf.org/" target="_blank"> <img alt="IJF" src="../../assets/ijf.png" width="100px">
-            </a>
-        </aside>
-    </div>
-    <div class="col-2">
-        <div class="row-1">
-            <article class="module">
-                <app-ng-slick></app-ng-slick>
-            </article>
-        </div>
-        <div class="row-2">
-            <article class="module">
-                <h2>Judoka of the Month</h2>
-                <h3>Diane Tamai Jackson</h3>
-                <img id="diane" src="http://shufujudo.org/wp-content/uploads/CRFM_20130309_92421.jpg" alt="Diane Tamia Jackson" width="680px">
-                <p>Diane Tamai Jackson, godan, began judo at age seven. Her first sensei was her father, Ken Tamai, at the Hui-o judo club in Maryland, and she grew up competing in shiai. As an adult, she has been a member of over ten US teams in international
-                    judo kata competition, including the Kodokan International Kata Invitational, Cuban Olympics, Pan American Championships, and four World Judo Kata Championships. She has also won multiple medals in kata at the open World Masters Judo
-                    Championships. Diane was most recently the 2016 Ju-no-kata Pan-American gold medalist in 2015 & 2016 kata grand champion in the mixed division at the Senior National Championships. Diane is an active volunteer for judo, as a National-level
-                    referee, National-level kata judge, member of the Shufu region Board of Examiners, Chair of the Kata Committee for the Shufu region, and an assistant instructor at Hui-o judo club in Beltsville, Maryland.</p>
-            </article>
-        </div>
-    </div>
-    <div class="col-2">
-        <div class="row-1">
-            <article class="module">
-                <h2>Next Event</h2>
-                <!-- <app-event-calendar></app-event-calendar> -->
-                <!-- insert calendar pull -->
-            </article>
-        </div>
-        <div class="row-2">
-            <article class="module">
-                <h2>News Story of the Month</h2>
-                <img id="news" src="https://www.judoinside.com/photos/hans/2017/World_U21_Championships_Zagreb/20171018_junior_world_championships_zagreb_km_yong_gwon_kim_prk.jpg" height="400px">
-                <p>The team of North Korea won’t be a part of the World Championships in Tokyo. Last year North Korean was part of the bronze mixed team in a first unified team with five judoka from the South and one judoka from the North for the mixed team
-                    event. At first place two men and six women were selected for the 2019 World Championships, but the North Korea have cancelled its planned participation in the World Judo Championships to be held from August 25 at Tokyo's Budokan.
-                    North Korea was expected to send a three-member delegation, including vice sports minister Won Kil U, to the seminar to be held in the Japanese capital next week. The Japan Olympic Committee will use the occasion to provide officials
-                    from Olympic committees of countries and regions participating in the Olympics with information about the Olympic venues and other facilities. The Japanese government has said that it will give the North Korean delegation permission
-                    to attend the seminar as an exception from Japan's sanctions that bans North Korean nationals in principle from entering the country. Informed sources say that the North Korean side notified Japan of its decision to cancel the trip.
-                    Men's lightweight Yong Gwon Kim finished seventh last year in Baku and was again in the draft selection. North Korea has agreed with the International Olympic Committee on a plan to form joint teams with South Korea in four sports
-                    categories including judo for the Tokyo Games. These were the athletes that were selected, but will have to stay home: U60: Jae Yong An and Yong Gwon Kim U48: Yu Sun Jon and Jong Hung Kim U52: Song Sim Rim U57: Hyo Sun Ri and Jin A
-                    Kim U70: Sun Yong Kwon</p>
-            </article>
-        </div>
-    </div>
-    <div class="col-1">
-        <aside class="module">
-            <a class="active"></a>
-            <h2>Sponsors</h2>
-            <br>
-            <a href="https://www.kokakids.co.uk/" target="_blank">
-                <img alt="Koka Kids" id="koka" src="../../assets/kokakids.png" width="100px">
-            </a>
-            <br>
-            <br>
-            <a href="https://www.dollamur.com/" target="_blank">
-                <img alt="Dollamur" id="dollamur" src="../../assets/dollamur.png" width="100px">
-            </a>
-            <br>
-            <br>
-            <a href="https://hatashitasports.com/" target="_blank">
-                <img alt="Hatashita" id="hatashita" src="../../assets/hatashita.jpg" width="100px">
-            </a>
-            <br>
-            <br>
-            <a href="https://shop.spreadshirt.com/Honormartialarts/" target="_blank">
-                <img alt="Honor Martial Arts" id="honor" src="../../assets/honor.png" width="100px">
-            </a>
-            <br>
-            <br>
-            <a href="https://www.macsmartialarts.com/" target="_blank">
-                <img alt="Macs Martial Arts" id="macs" src="../../assets/macs.png" width="100px">
-            </a>
-            <br>
-            <br>
-            <a href="http://judounlimited.com/" target="_blank">
-                <img id="unlimited" src="../../assets/judo-unlimited.png" width="100px">
-            </a>
-            <br>
-            <br>
-            <a href="https://truesport.org/" target="_blank">
-                <img id="sport" src="../../assets/trueSport.png" width="100px">
-            </a>
-        </aside>
-    </div>
-</div>
+        .align {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
 
-<app-footer></app-footer>
+        img.affiliates {
+            list-style: none;
+            display: inline-block;
+            padding: 20px 20px 19px 20px;
+        }
+
+        img.sponsors {
+            list-style: none;
+            display: inline-block;
+            padding: 20px 20px 19px 20px;
+        }
+
+        #style {
+            width: 99%;
+        }
+    }
+
+    @media screen and (max-width:1000px) and (min-width: 951px){
+        .container {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 1em;
+        }
+
+        .box1 {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            margin: 0 32px 0 4px;
+        }
+        .box2 {
+            margin-left: 3px;
+            grid-column: 1/4;
+            margin-right: 32px;
+            height: 336px;
+            padding: 0px 0px 80px 0px;
+        }
+        .box3 {
+            grid-column: 1/4;
+            height: 336px;
+            margin-right: 32px;
+            padding: 0px 40px 80px 40px;
+            margin: 0 32px 0 0;
+        }
+        .box4 {
+            margin-left: 3px;
+            grid-column: 1/4;
+            margin-right: 32px;
+            height: 300px;
+            padding: 0px 40px 80px 40px;
+        }
+        .box5 {
+            grid-column: 1/4;
+            height: 300px;
+            margin-right: 32px;
+            overflow: auto;
+        }
+        .box6 {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            margin: 0px 32px 3px 4px;
+        }
+
+        .align {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 900px;
+            height: 140px;
+        }
+
+        .int {
+            line-height: 40%;
+        }
+
+        #style {
+            width: 99%;
+        }
+    }
+
+    @media screen and (max-width:1500px) and (min-width: 1001px){
+        .container{
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 1em;
+            grid-auto-rows: 150px;
+        }
+
+        .box1 {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            margin: 0 32px 0 4px;
+        }
+        .box2 {
+            margin-left: 3px;
+            grid-column: 1;
+            grid-row: 2;
+            height: 336px;
+            padding: 0px 0px 80px 0px;
+        }
+        .box3 {
+            grid-column: 2;
+            grid-row: 2;
+            height: 336px;
+            padding: 0px 40px 80px 40px;
+            margin: 0 16px 0 0;
+        }
+        .box4 {
+            margin-top: 265px;
+            margin-left: 3px;
+            grid-column: 1;
+            grid-row: 3;
+            overflow: auto;
+            height: 300px;
+            padding: 0px 40px 80px 40px;
+        }
+        .box5 {
+            grid-column: 2;
+            grid-row: 3;
+            overflow: auto;
+            height: 300px;
+            padding: 0px 40px 80px 40px;
+            margin: 265px 16px 0 0;
+        }
+        .box6 {
+            grid-column: 1/4;
+            grid-row: 7;
+            display: flex;
+            justify-content: center;
+            margin: 0px 32px 3px 4px;
+        }
+
+        .align {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 900px;
+            height: 140px;
+        }
+
+        .int {
+            line-height: 40%;
+        }
+
+        #style {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1501px) and (max-width: 1670px){
+        .container {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 10% 40% 37% 13%;
+            grid-gap: 1em;
+            grid-auto-rows: 150px;
+            margin-bottom: 275px;
+        }
+
+        .box1 {
+            grid-row: 1/4;
+            height: 650px;
+            padding: 0px 0px 80px 30px;
+        }
+        .box2 {
+            grid-column: 2;
+            grid-row: 1/2;
+            height: 236px;
+            padding: 0px 0px 80px 0px;
+        }
+        .box3 {
+            grid-column: 3;
+            grid-row: 1/2;
+            height: 236px;
+            padding: 0px 40px 80px 40px;
+        }
+        .box4 {
+            grid-column: 2;
+            grid-row: 3/4;
+            overflow: auto;
+            height: 318px;
+            padding: 0px 40px 80px 40px;
+        }
+        .box5 {
+            grid-column: 3;
+            grid-row: 3/4;
+            overflow: auto;
+            height: 318px;
+            padding: 0px 40px 80px 40px;
+        }
+        .box6 {
+            grid-column: 4;
+            grid-row: 1/4;
+            height: 650px;
+            margin-right: 45px;
+            padding: 0px 40px 80px 40px;
+        }
+
+        img.affiliates {
+            margin-top: 55px;
+        }
+
+        img.sponsors {
+            margin-top: 55px;
+        }
+
+        .int {
+            line-height: 40%;
+        }
+
+        #style {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1671px) and (max-width: 1800px){
+        .container {
+            margin-top: 35px;
+            margin-bottom: 275px;
+            display: grid;
+            grid-template-columns: 10% 40% 37% 13%;
+            grid-gap: 1em;
+            grid-auto-rows: 150px;
+        }
+
+        .box1 {
+            grid-row: 1/4;
+            padding-left: 30px;
+            height: 730px;
+        }
+        .box2 {
+            grid-column: 2;
+            grid-row: 1/2;
+            height: 236px;
+            padding: 0px 0px 80px 0px;
+        }
+        .box3 {
+            grid-column: 3;
+            grid-row: 1/2;
+            height: 236px;
+            padding: 0px 40px 80px 40px;
+        }
+        .box4 {
+            grid-column: 2;
+            grid-row: 3/4;
+            height: 318px;
+            padding: 0px 40px 80px 40px;
+        }
+        .box5 {
+            grid-column: 3;
+            grid-row: 3/4;
+            overflow: auto;
+            height: 318px;
+            padding: 0px 40px 80px 40px;
+        }
+        .box6 {
+            grid-column: 4;
+            grid-row: 1/4;
+            height: 650px;
+            margin-right: 45px;
+            padding: 0px 40px 80px 40px;
+        }
+
+        img.affiliates {
+            margin-top: 55px;
+        }
+
+        img.sponsors {
+            margin-top: 55px;
+        }
+
+        .int {
+            line-height: 40%;
+        }
+
+        #style {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1801px) {
+        .container {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 10% 40% 40% 10%;
+            grid-gap: 1em;
+            grid-auto-rows: 150px;
+        }
+        
+        .box1 {
+            grid-row: 1/4;
+            height: 650px;
+        }
+        .box2 {
+            grid-column: 2;
+            grid-row: 1/2;
+            height: 236px;
+        }
+        .box3 {
+            grid-column: 3;
+            grid-row: 1/2;
+            height: 236px
+        }
+        .box4 {
+            grid-column: 2;
+            grid-row: 3/4;
+            height: 318px;
+        }
+        .box5 {
+            grid-column: 3;
+            grid-row: 3/4;
+            overflow: auto;
+            height: 318px;
+        }
+        .box6 {
+            grid-column: 4;
+            grid-row: 1/4;
+            height: 650px;
+            margin-right: 45px;
+        }
+
+        .int {
+            line-height: 40%;
+        }
+
+        #style {
+            width: 100%;
+        }
+    }
+    
+    /* universal */
+
+    .container > div {
+            background: #eee;
+            border-radius: 2px;
+    }
+
+    #style {
+        border: solid 3px rgb(116, 33, 155);
+        color: rgb(81, 0, 128);
+        font-weight: 700;
+        text-align: center;
+        height: 200px;
+    }
+
+    #margin {
+        margin-top: 80px;
+    }
+
+    img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+    /* Judoka of the month */
+
+    img#diane {
+        float: left;
+        padding-right: 10px;
+    }
+    .int {
+        text-align: center;
+        
+    }
+    .Judoka {
+        font-size: 15px;
+        color: rgb(49, 49, 49);
+    }
+    h3{
+        color: rgb(13, 68, 119);
+    }
+
+    /* News Story of the Month */
+
+    img#news {
+        padding-right: 10px;
+        float: left;
+    }
+    .Story {
+        text-align: center;
+        line-height: 40%;
+    }
+    .n {
+        font-size: 14px;
+        color: rgb(49, 49, 49);
+    }
+
+    h1 {
+        color: rgb(36, 36, 36);
+    }
+
+    </style>
+        
+        <app-header></app-header>
+
+        <div class="container">
+            <div class="box1">
+                <div class="align">
+                        <a href="https://www.teamusa.org/USA-Judo">
+                            <img alt="USA Judo" src="../../assets/usajudo.png" width="100px" class="affiliates">
+                            </a>
+                            <a href="https://www.usja.net/">
+                                <img alt="USJA" src="../../assets/usja.png" width="100px" class="affiliates">
+                                </a>
+                                <a href="https://www.usjf.com/">
+                                    <img alt="USJF" src="../../assets/usjf.png" width="100px" class="affiliates">
+                                    </a>
+                                    <a href="http://panamericanjudo.com/">
+                                        <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px" class="affiliates">
+                                        </a>
+                                        <a href="https://www.ijf.org/">
+                                            <img alt="IJF" src="../../assets/ijf.png" width="100px" class="affiliates">
+                                            </a>
+                </div>
+            </div>
+            <div class="box2">
+                <h2 class="int">Slide Show</h2>
+            </div>
+            <div class="box3">
+                <article>
+                    <h1 class="int">Next Event</h1>
+                    <div id="style">
+                        <p id="margin">IBSA Grand Prix - PARA Qualifier<br><br>
+                        09 / 24 / 2019</p>
+                    </div>
+                </article>
+            </div>
+            <div class="box4">
+                <article>
+                    <div class="int">
+                        <h1>Judoka of the Month</h1>
+                        <h3>Diane Tamai Jackson</h3>
+                    </div>
+                <div class="Judoka">
+                    <img id="diane" src="../../assets/Diane Tamai Jackson.jpg" alt="Diane Tamia Jackson" width="200px">
+                    <p>
+                        Diane Tamai Jackson, godan, began judo at age seven. Her first sensei was her father, Ken Tamai, at the Hui-o judo club in Maryland, and she grew up competing in shiai. As an adult, she has been a member of over ten US teams in international judo kata
+                        competition, including the Kodokan International Kata Invitational, Cuban Olympics, Pan American Championships, and four World Judo Kata Championships. She has also won multiple medals in kata at the open World Masters Judo Championships.
+                        Diane was most recently the 2016 Ju-no-kata Pan-American gold medalist in 2015 & 2016 kata grand champion in the mixed division at the Senior National Championships. Diane is an active volunteer for judo, as a National-level referee, National-level
+                        kata judge, member of the Shufu region Board of Examiners, Chair of the Kata Committee for the Shufu region, and an assistant instructor at Hui-o judo club in Beltsville, Maryland.
+                    </p>
+                </div>
+                </article>
+            </div>
+            <div class="box5">
+                <article>
+                    <div class="Story">
+                        <h1>News Story of the Month</h1>
+                    </div>
+                    <img id="news" src="../../assets/kim young-gwon.jpg" height="325px">
+                    <p class="n">The team of North Korea won’t be a part of the World Championships in Tokyo. Last year North Korean was part of the bronze mixed team in a first unified team with five judoka from the South and one judoka from the North for the mixed team event.
+                        At first place two men and six women were selected for the 2019 World Championships, but the North Korea have cancelled its planned participation in the World Judo Championships to be held from August 25 at Tokyo's Budokan. North Korea was
+                        expected to send a three-member delegation, including vice sports minister Won Kil U, to the seminar to be held in the Japanese capital next week. The Japan Olympic Committee will use the occasion to provide officials from Olympic committees
+                        of countries and regions participating in the Olympics with information about the Olympic venues and other facilities. The Japanese government has said that it will give the North Korean delegation permission to attend the seminar as an exception
+                        from Japan's sanctions that bans North Korean nationals in principle from entering the country. Informed sources say that the North Korean side notified Japan of its decision to cancel the trip. Men's lightweight Yong Gwon Kim finished seventh
+                        last year in Baku and was again in the draft selection. North Korea has agreed with the International Olympic Committee on a plan to form joint teams with South Korea in four sports categories including judo for the Tokyo Games. These were
+                        the athletes that were selected, but will have to stay home: U60: Jae Yong An and Yong Gwon Kim U48: Yu Sun Jon and Jong Hung Kim U52: Song Sim Rim U57: Hyo Sun Ri and Jin A Kim U70: Sun Yong Kwon</p>
+                </article>
+            </div>
+            <div class="box6">
+                <div class="align">
+                    <a href="https://www.kokakids.co.uk/">
+                            <img src="https://www.usjf.com/wp-content/uploads/2018/09/kokakids.png" width="100px" class="sponsors">
+                        </a>
+                        <a href="https://www.hatashita.com/">
+                            <img src="https://www.usjf.com/wp-content/uploads/2018/09/hatashita-logo.png" width="100px" class="sponsors">
+                            </a>
+                            <a href="https://shop.spreadshirt.com/Honormartialarts/">
+                                    <img src="https://www.usjf.com/wp-content/uploads/2018/09/honor-footer-logo.png" width="100px" class="sponsors">
+                                </a>
+                                <a href="https://www.macsmartialarts.com/">
+                                        <img src="https://www.usjf.com/wp-content/uploads/2018/09/macs_logo.png" width="100px" class="sponsors">
+                                    </a>
+                                    <a href="http://judounlimited.com/">
+                                            <img src="https://www.usjf.com/wp-content/uploads/2018/09/judo-unlimited_logo.png" width="100px" class="sponsors">
+                                        </a>
+                </div>
+            </div>
+        </div>
+
+    <app-footer></app-footer>

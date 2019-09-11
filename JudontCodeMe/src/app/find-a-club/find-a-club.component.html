@@ -1,64 +1,140 @@
 <style>
-    .container {
-        display: grid;
-        grid-template-columns: 20% 60% 20%;
-        grid-gap: 1em;
+    @media screen and (max-width: 1499px){
+        .container {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-gap: 1em;
+        }
+    
+        .box1{
+            grid-row: 3;
+            height: 650px;
+            margin-left: 20px;
+            margin-right: 50px;
+        }
+        .box2{
+            grid-row: 2;
+            height: 650px;
+            margin-left: 20px;
+            margin-right: 50px;
+            text-align: center;
+        }
+        .title{
+            grid-column: 1/3;
+            margin-left: 20px;
+            margin-right: 65px;
+            height: 80px;
+            padding-top: 0px
+        }
     }
     
-    .container>div {
-        margin-top: 160px;
+    @media screen and (min-width: 1500px) and (max-width: 1679px){
+        .container {
+            margin-top: 20px;
+            margin-bottom: 25px;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-gap: 1em;
+        }
+    
+        .box1{
+            height: 650px;
+            margin-left: 20px;
+        }
+        .box2{
+            height: 650px;
+            margin-right: 50px;
+            text-align: center;
+        }
+        .title{
+            grid-column: 1/3;
+            margin-left: 20px;
+            margin-right: 50px;
+            height: 80px;
+            padding-top: 0px
+        }
+    }
+    
+    @media screen and (min-width: 1680px) {
+        .container {
+            margin-top: 20px;
+            margin-bottom: 25px;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-gap: 1em;
+        }
+    
+        .box1{
+            height: 650px;
+            margin-left: 20px;
+        }
+        .box2{
+            height: 650px;
+            margin-right: 50px;
+            text-align: center;
+        }
+        .title{
+            grid-column: 1/3;
+            margin-left: 20px;
+            margin-right: 50px;
+            height: 80px;
+            padding-top: 0px
+        }
+    }
+    
+    h1{
+        margin-left: 50px;
+        background-color: #1e76b1;
+        color: transparent;
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+                background-clip: text;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .container > div {
         background: #eee;
-        padding: 40px;
+        box-shadow: 
+            0 1px 2px #fff, 
+            0 -1px 1px #666, 
+            inset 0 -1px 1px rgba(0,0,0,0.5), 
+            inset 0 10px 10px rgba(255,255,255,0.8); 
         border-radius: 2px;
     }
-    
-    .box1 {
-        height: 560px;
-        margin-left: 20px;
-    }
-    
-    .box2 {
-        height: 560px;
-    }
-    
-    .box3 {
-        height: 560px;
-        margin-right: 50px;
-    }
-</style>
-
-<app-header></app-header>
-
-<div class="container">
-    <div class="box1">
-        <h2>Clubs Found</h2>
-        <p>List Clubs By:
-            <br/> -Affiliation
-            <br/> -Yudanshakai
-            <br/> -Club Name
-            <br/> -Sensei
-            <br/> -Address
-            <br/> -Phone Number
-        </p>
-    </div>
-
-    <div class="box2">
-        <p>
-            Map Render With Results
-            <br/> Google Maps - Dev
-        </p>
-    </div>
-
-    <div class="box3">
-        <p>Search</p>
-        <p>Show All</p>
-        <p>Zip Code</p>
-        <p>City, State</p>
-        <p>Distance</p>
-        <p>Affiliation</p>
-        <p>Yudanshakai</p>
-        <p>Club</p>
-    </div>
-</div>
-
-<app-footer></app-footer>
+        </style>
+            
+            <app-header></app-header>
+            
+            <div class="container">
+                <div class="title">
+                    
+                    <h1>Connect <img src="../../assets/connect.png" width="20px"></h1>
+                </div>
+                    <div class="box1">
+                            <h2>Google Maps</h2>
+                        </div>
+                            <div class="box2">
+                                <h2>Search</h2>
+                                <p>Zip Code</p>
+                                <input type="text">
+                                <p>City, State</p>
+                                <input type="text">
+                                <p>Distance</p>
+                                <input type="text">
+                                <p>Affiliation</p>
+                                <input type="text">
+                                <p>Yudanshakai</p>
+                                <input type="text">
+                                <p>Club</p>
+                                <input type="text">
+                                <br><br>
+                                <button>search</button>
+                            </div>
+                </div>
+            
+            <app-footer></app-footer>

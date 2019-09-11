@@ -21,8 +21,7 @@ import { EventPjComponent } from './event-pj/event-pj.component';
 import { EventUsajComponent } from './event-usaj/event-usaj.component';
 import { EventUsjaComponent } from './event-usja/event-usja.component';
 import { EventUsjfComponent } from './event-usjf/event-usjf.component';
-import { AnimatedLogoComponent } from './animated-logo/animated-logo.component';
-import { NgSlickComponent } from './ng-slick/ng-slick.component';
+import { CommitteesComponent } from './committees/committees.component';
 
 @NgModule({
   declarations: [
@@ -44,8 +43,7 @@ import { NgSlickComponent } from './ng-slick/ng-slick.component';
     EventUsajComponent,
     EventUsjaComponent,
     EventUsjfComponent,
-    AnimatedLogoComponent,
-    NgSlickComponent
+    CommitteesComponent
   ],
   imports: [
     BrowserModule,
