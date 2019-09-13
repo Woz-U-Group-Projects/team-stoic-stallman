@@ -10,7 +10,7 @@ a {
 
 a:visited,
 a:focus {
-    color: #DCDCDD;
+    color: rgb(102, 154, 167);
 }
 
 a:hover {
@@ -19,23 +19,23 @@ a:hover {
 
 footer {
     padding: 0.5rem;
-    color: #DCDCDD;
     position: fixed;
+    height: 40px;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: bottom center;
 }
 
-.flex-container {
+
+/* .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex;
-}
+} */
 
-#right {
+#center {
     top: 0;
-    float: right;
-    color: rgb(92, 226, 215);
+    text-align: center;
+    color: #DCDCDD;
 }
