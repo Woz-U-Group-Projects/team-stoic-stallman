@@ -1,4 +1,4 @@
-This project is an adaptation f the source code in a deployment package provided as a preexisting build. leaving the rest of this readme intacked inorder to give credit to the individuals who contributed to the original project.
+This project is an adaptation of the source code in the Hackathon_Starter deployment package provided as a pre-existing build. leaving the rest of this readme intacked in TXT file format in order to give credit to the individuals who contributed to the original project. foundations
 
 
 ![](https://lh4.googleusercontent.com/-PVw-ZUM9vV8/UuWeH51os0I/AAAAAAAAD6M/0Ikg7viJftQ/w1286-h566-no/hackathon-starter-logo.jpg)
