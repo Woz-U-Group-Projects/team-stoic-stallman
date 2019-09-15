@@ -1,0 +1,64 @@
+@mixin animated-logo {
+    body {
+        background: hsl(198, 81%, 45%);
+        background: radial-gradient( ellipse at center, hsl(198, 81%, 40%) 0%, hsl(216, 29%, 33%) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 100vh;
+        * {
+            width: 70vh;
+            height: 70vh;
+        }
+        .view {
+            transform-style: preserve-3d;
+            perspective: 65vh;
+            .mat {
+                position: relative;
+                transition: transform 1s ease-in-out;
+                background: repeating-linear-gradient( to bottom, transparent 0.1vh, rgba(255, 255, 255, 0.08) 6vh), repeating-linear-gradient( to right, transparent 0.1vh, rgba(255, 255, 255, 0.08) 6vh);
+                transform-style: preserve-3d;
+                a {
+                    position: absolute;
+                    display: block;
+                    transition: opacity 750ms;
+                    opacity: 0;
+                    transform: rotate3d(var(--x), var(--y), var(--z), var(--a));
+                    transform-style: preserve-3d;
+                    &:nth-of-type(4n + 1) {
+                        --x: 1;
+                        --y: 1;
+                        --z: 0;
+                        --a: 30deg;
+                    }
+                    &:nth-of-type(4n + 2) {
+                        --x: 1.5;
+                        --y: 1.5;
+                        --z: 0.2;
+                        --a: -30deg;
+                    }
+                    &:nth-of-type(4n + 3) {
+                        --x: 1.2;
+                        --y: 1;
+                        --z: 0.2;
+                        --a: 30deg;
+                    }
+                    &:nth-of-type(4n + 4) {
+                        --x: 3;
+                        --y: -5;
+                        --z: 8;
+                        --a: 25deg;
+                    }
+                    &.visible {
+                        opacity: 1;
+                    }
+                    img {
+                        object-fit: cover;
+                        filter: drop-shadow(0 0 4vh rgba(255, 255, 255, 0.8));
+                    }
+                }
+            }
+        }
+    }
+}

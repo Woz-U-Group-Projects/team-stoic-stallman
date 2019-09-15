@@ -1,0 +1,38 @@
+.slick-slider {
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    background: gray;
+}
+
+.nav-btn {
+    height: 20px;
+    position: absolute;
+    width: 28px;
+    cursor: pointer;
+    top: 100px !important;
+}
+
+.prev-slide.slick-disabled,
+.next-slide.slick-disabled {
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.prev-slide {
+    background: url(../../assets/nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+}
+
+.next-slide {
+    background: url(../../assets/nav-icon.png) no-repeat scroll -24px 0px;
+    right: -33px;
+}
+
+.prev-slide:hover {
+    background-position: 0px -53px;
+}
+
+.next-slide:hover {
+    background-position: -24px -53px;
+}

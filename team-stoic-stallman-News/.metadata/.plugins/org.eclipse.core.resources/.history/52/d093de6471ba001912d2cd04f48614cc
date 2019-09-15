@@ -1,0 +1,5 @@
+package com.judontknowme.discussion;
+
+public class Message {
+
+}

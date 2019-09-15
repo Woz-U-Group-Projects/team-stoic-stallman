@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding-top: 2px;
+    padding-left: 0px;
+}
+
+.container-top {
+    position: top;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Alegreya SC', serif;
+    font: bold;
+}
+
+a:hover {
+    -moz-box-shadow: 0 0 4px #2626C4;
+    -webkit-box-shadow: 0 0 4px #2626C4;
+    box-shadow: 0 0 4px #2626C4;
+    opacity: 0.3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+article {
+    font-family: 'Caudex', serif;
+    justify-content: center;
+    font-size: 14px;
+}
+
+h2 {
+    font: bold;
+    font-family: 'Caudex', serif;
+    justify-content: center;
+}
+
+[class*='col-'] {
+    float: left;
+    padding: 4px;
+    background-color: lightgrey;
+    border: 2px #2626C4 solid;
+    font-family: 'Caudex', serif;
+}
+
+.col-1 {
+    width: 32%;
+    margin: 4px;
+}
+
+.col-2 {
+    width: 32%;
+    margin: 4px;
+}
+
+.col-3 {
+    width: 32%;
+    margin: 4px;
+}
+
+[class*='col-']:last-of-type {
+    padding: 4px;
+}
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.module {
+    padding: 4px;
+    background: #eee;
+    margin: 4px;
+}
+
+img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+#bold {
+    font-weight: bolder;
+}
+
+iframe {
+    width: 90%;
+}
