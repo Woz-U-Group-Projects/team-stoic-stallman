@@ -160,7 +160,36 @@
         border-radius: 2px;
     }
     
-    
+    button {
+        padding: 4px 1px 4px 1px;
+        margin-left: 10px;
+    }
+
+    input {
+        width: 337px;
+        padding: 4px 5px 4px 5px;
+        margin: 4px 0 0 10px;
+    }
+
+    .reg {
+        text-align: center;
+        margin: 15px 0 0 0;
+        font-size: 20px;
+        font-weight: 750;
+        color: rgb(91, 95, 102);
+    }
+
+    .size {
+        font-size: 16px;
+        font-weight: 700;
+        color: rgb(72, 119, 182);
+    }
+
+    #sub {
+        margin: 10px 0 0 45%;
+        padding: 4px 10px 4px 10px;
+    }
+
     </style>
         
         <app-header></app-header>
@@ -186,7 +215,7 @@
                     </div>
                             
                         <div class="box3">
-                            <div>Upload Source: Youtube | Instagram | Facebook | PhotoBucket | Snapfish</div>
+                            <div class="size">Upload Source:<input type="text" placeholder="Youtube | Instagram | Facebook | PhotoBucket | Snapfish" id="length"><button>upload</button></div>
                         </div>
             
                             <div class="box4">
@@ -199,15 +228,13 @@
                             </div>
             
                                 <div class="box5">
-                                    <p>
-                                        Register for an Event:
-                                        <br/> -Name
-                                        <br/> -Location
-                                        <br/> -Address
-                                        <br/> -Hosted by
-                                        <br/> Date & Time
-                                        <br/> -Recruiting
-                                    </p>
+                                        <div class="reg">Register for an Event:</div>
+                                        <br/> <input type="text" placeholder="Name">
+                                        <br/> <input type="text" placeholder="Location">
+                                        <br/> <input type="text" placeholder="Address">
+                                        <br/> <input type="text" placeholder="Host">
+                                        <br/> <input type="text" placeholder="Date & Time">
+                                        <button id="sub">submit</button>
                                 </div>
             </div>
     
