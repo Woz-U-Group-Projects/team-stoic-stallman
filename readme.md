@@ -1,0 +1,1 @@
+This project is an adaptation of the source code in the Hackathon_Starter deployment package provided as a pre-existing build. leaving the rest of this readme intacked in TXT file format in order to give credit to the individuals who contributed to the original project foundations
