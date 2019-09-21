@@ -23,7 +23,7 @@ import { EventUsjaComponent } from './event-usja/event-usja.component';
 import { EventUsjfComponent } from './event-usjf/event-usjf.component';
 import { CommitteesComponent } from './committees/committees.component';
 import { NgSlickComponent } from './ng-slick/ng-slick.component';
-import { SlickCarouselModule } from './ngx-slick-carousel';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
