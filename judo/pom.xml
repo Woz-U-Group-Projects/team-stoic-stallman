@@ -16,7 +16,7 @@
 	<description>American Judo Alliance</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>12</java.version>
 		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>

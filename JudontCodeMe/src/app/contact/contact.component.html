@@ -1,25 +1,496 @@
+<style>
+    @media screen and (max-width: 828px) {
+        .container {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .box1 {
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .box2 {
+            margin-top: 30px;
+            height: 400px;
+        }
+        .box3 {
+            margin-top: 30px;
+            height: 400px;
+        }
+        .box4 {
+            margin-top: 30px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 1em;
+            padding: 0 20px 20px 0;
+            overflow: hidden;
+        }
+        .box5 {
+            margin-top: 30px;
+            padding-top: 10px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            overflow: hidden;
+        }
+        img.affiliates {
+            list-style: none;
+            display: inline-block;
+            padding: 20px 20px 19px 20px;
+        }
+        .title {
+            grid-row: 1;
+            grid-column: 1/4;
+            text-align: center;
+            margin-bottom: -30px;
+        }
+        .aff1 {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .aff2 {
+            grid-row: 3;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .aff3 {
+            grid-row: 2;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .aff4 {
+            grid-row: 3;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .aff5 {
+            grid-row: 2;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .des1 {
+            grid-row: 2;
+            margin-left: 60px;
+            margin-top: 70px;
+        }
+        .des2 {
+            grid-row: 3;
+            grid-column: 1;
+            margin-left: 60px;
+            margin-top: -170px;
+        }
+        .title {
+            grid-column: 1/4;
+            grid-row: 1;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .map {
+            grid-row: 2;
+            grid-column: 2/4;
+            margin-left: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 1500px) and (min-width: 829px) {
+        .container {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 1em;
+        }
+        .box1 {
+            display: flex;
+            justify-content: center;
+            grid-column: 1/3;
+            margin-right: 20px;
+            padding: 40px;
+        }
+        .box3 {
+            margin-right: 20px;
+        }
+        .box4 {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 1em;
+            padding: 0 20px 20px 0;
+            overflow: hidden;
+        }
+        .box5 {
+            padding-top: 10px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+        .align {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 900px;
+            height: 80px;
+        }
+        .title {
+            grid-row: 1;
+            grid-column: 1/4;
+            text-align: center;
+            margin-bottom: -30px;
+        }
+        .aff1 {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .aff2 {
+            grid-row: 3;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .aff3 {
+            grid-row: 2;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .aff4 {
+            grid-row: 3;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .aff5 {
+            grid-row: 2;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+        }
+        .des1 {
+            grid-row: 2;
+            margin-left: 60px;
+            margin-top: 70px;
+        }
+        .des2 {
+            grid-row: 3;
+            grid-column: 1;
+            margin-left: 60px;
+            margin-top: -170px;
+        }
+        .title {
+            grid-column: 1/4;
+            grid-row: 1;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .map {
+            grid-row: 2;
+            grid-column: 2/4;
+            margin-left: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 1699px) and (min-width: 1501px) {
+        .container {
+            display: grid;
+            grid-template-columns: 10% 40% 50%;
+            grid-gap: 1em;
+            grid-auto-rows: 350px;
+            margin: 37px 0 37px 0;
+        }
+        .box1 {
+            grid-row: 1/3;
+            padding: 40px;
+        }
+        .box3 {
+            margin-right: 30px;
+        }
+        .box4 {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 1em;
+            padding: 0 20px 20px 0;
+            overflow: hidden;
+        }
+        .box5 {
+            padding-top: 10px;
+            margin-right: 30px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            overflow: hidden;
+        }
+        img.affiliates {
+            margin-top: 40px;
+        }
+        .title {
+            grid-row: 1;
+            grid-column: 1/4;
+            text-align: center;
+            margin-bottom: -30px;
+        }
+        .aff1 {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .aff2 {
+            grid-row: 3;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .aff3 {
+            grid-row: 2;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+            border-radius: 10px;
+        }
+        .aff4 {
+            grid-row: 3;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+            border-radius: 10px;
+        }
+        .aff5 {
+            grid-row: 2;
+            text-align: center;
+            background-color: rgb(90, 134, 190);
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .des1 {
+            grid-row: 2;
+            margin-left: 60px;
+            margin-top: 70px;
+        }
+        .des2 {
+            grid-row: 3;
+            grid-column: 1;
+            margin-left: 60px;
+            margin-top: -170px;
+        }
+        .title {
+            grid-column: 2/4;
+            margin-left: 90px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .map {
+            margin-left: 100px;
+            grid-column: 2/4;
+        }
+    }
+    
+    .container>div {
+        background: #eee;
+        border-radius: 2px;
+    }
+    
+    img:hover {
+        opacity: 0.3;
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+    }
+    
+    .location {
+        margin-top: 20px;
+        height: 280px;
+        width: 420px;
+    }
+    
+    .title2 {
+        grid-column: 1/4;
+        text-align: center;
+    }
+    
+    .HQ {
+        float: left;
+        width: 50%;
+        margin: 0 10px 0 10px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    textarea {
+        margin-top: 20px;
+        width: 99.3%;
+        resize: none;
+    }
+    
+    #one {
+        color: gray;
+        font-size: 12;
+        text-align: center;
+    }
+    
+    .move {
+        margin-left: 50%;
+    }
+    
+    .questions {
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 25px;
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+</style>
+
 <app-header></app-header>
 
-<div class="body">
+<div class="container">
+    <div class="box1">
+        <div class="align">
+            <a href="https://www.teamusa.org/USA-Judo">
+                <img alt="USA Judo" src="../../assets/usajudo.png" width="100px" class="affiliates">
+            </a>
+            <a href="https://www.usja.net/">
+                <img alt="USJA" src="../../assets/usja.png" width="100px" class="affiliates">
+            </a>
+            <a href="https://www.usjf.com/">
+                <img alt="USJF" src="../../assets/usjf.png" width="100px" class="affiliates">
+            </a>
+            <a href="http://panamericanjudo.com/">
+                <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px" class="affiliates">
+            </a>
+            <a href="https://www.ijf.org/">
+                <img alt="IJF" src="../../assets/ijf.png" width="100px" class="affiliates">
+            </a>
+        </div>
+    </div>
 
-    <div class="side-bar-1-8">
-        <p>Affiliate Logos</p>
+    <div class="box2">
+        <h2>Our Headquarters</h2>
+        <img src="../../assets/HQ.jpg" alt="Headquarters" class="HQ">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus leo ac pharetra tincidunt. Quisque a felis quis urna faucibus gravida a in nulla. In eget ex nec risus maximus aliquam. Sed luctus venenatis auctor. Cras vulputate metus nec pretium
+            luctus. Aliquam mollis, enim eu egestas aliquam, libero dui vehicula est, ac vulputate nisi lorem ac sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra condimentum aliquet. Nunc gravida interdum ex, quis bibendum
+            felis volutpat id.
+        </div>
+    </div>
 
-        <div class="content-1-8">
-            <p>Headquarters Photo</p>
+    <div class="box3">
+        <div class="questions">Questions or Concerns?</div>
+        <div id="one">send our team a message below.</div>
+        <textarea id="subject" name="subject" placeholder="Message up to 1000
+characters" style="height:200px"></textarea>
+        <div class="move"><input type="submit" value="Submit"></div>
+    </div>
 
-            <div class="content-2-8">
-                <input type="submit" value="Submit">
-                <div>Email</div>
+    <div class="box4">
+        <div class="title2">
+            <h2>Find Affiliates On:</h2>
+        </div>
+        <div class="aff1">
+            <h5>USA Judo</h5>
+            <a href="https://www.pinterest.com/usajudo/" class="icon" id="pin" target="_blank">
+                <img src="../../assets/icons/pin.png" alt="Pinterest">
+            </a>
+            <a href="https://www.facebook.com/usajudoofficial/" class="icon" id="fb" target="_blank">
+                <img src="../../assets/icons/fb.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/usajudo?lang=en" class="icon" id="tweet" target="_blank">
+                <img src="../../assets/icons/tweet.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/USAJudoOfficial/" class="icon" id="ig" target="_blank">
+                <img src="../../assets/icons/ig.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="aff2">
+            <h5>USJA</h5>
+            <a href="https://www.facebook.com/USJudoAssoc/" class="icon" id="fb" target="_blank">
+                <img src="../../assets/icons/fb.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="aff3">
+            <h5>USJF</h5>
+            <a href="https://www.facebook.com/usjudofederation/" class="icon" id="fb" target="_blank">
+                <img src="../../assets/icons/fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/usjudofederation/" class="icon" id="ig" target="_blank">
+                <img src="../../assets/icons/ig.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/channel/UCNWHMgBTkAPvQ4S1i0etOvg" class="icon" id="yt" target="_blank">
+                <img src="../../assets/icons/yt.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="aff4">
+            <h5>PJUC</h5>
+            <a href="https://www.facebook.com/confederacionpanamericanadejudo/" class="icon" id="fb" target="_blank">
+                <img src="../../assets/icons/fb.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="aff5">
+            <h5>IJF</h5>
+            <a href="https://www.facebook.com/judo/" class="icon" id="fb" target="_blank">
+                <img src="../../assets/icons/fb.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/judo?lang=en" class="icon" id="tweet" target="_blank">
+                <img src="../../assets/icons/tweet.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/judogallery/" class="icon" id="ig" target="_blank">
+                <img src="../../assets/icons/ig.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
 
-                <textarea id="subject" name="subject" placeholder="Message
-up to 1000 characters" style="height:200px"></textarea>
-
-                <div class="content-3-7">
-                    <div>Phone</div>
-                    <div>Post Mail</div>
+    <div class="box5">
+        <div class="des1"><b>Phone:</b>
+            <a href="tel:2313520118">
+                <div class="phone">(231)352-0118</div>
+            </a>
+        </div>
+        <div class="des2"><b>Address:</b>
+            <div class="mail">10 Nature Trail, Beaver Island, MI 49782</div>
+        </div>
+        <div class="title">Headquarters Location</div>
+        <div class="map">
+            <img src="../../assets/map.png" alt="location" class="location">
+        </div>
+    </div>
 
 </div>
 
-                    <app-footer></app-footer>
-                    
+<app-footer></app-footer>

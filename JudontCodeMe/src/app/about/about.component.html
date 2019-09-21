@@ -1,34 +1,338 @@
+<style>
+    @media screen and (max-width: 828px) {
+        .container {
+            margin-top: 15px;
+            width: 100%;
+            text-align: center;
+        }
+        .box1 {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .box2 {
+            margin-top: 20px;
+        }
+        .align {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        img.affiliates {
+            list-style: none;
+            display: inline-block;
+            padding: 20px 20px 19px 20px;
+        }
+    }
+    
+    @media screen and (max-width: 1500px) and (min-width: 829px) {
+        .container {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-gap: 1em;
+        }
+        .box1 {
+            display: flex;
+            justify-content: center;
+        }
+        .align {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 900px;
+            height: 140px;
+        }
+    }
+    
+    @media screen and (max-width: 1699px) and (min-width: 1501px) {
+        .container {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: grid;
+            grid-template-columns: 10% 40% 50%;
+            grid-gap: 1em;
+        }
+        .box1 {
+            grid-row: 1/3;
+            padding-left: 30px;
+        }
+        .box2 {
+            grid-row: 1/3;
+            position: static;
+            height: 760px;
+            overflow: auto;
+        }
+        .box3 {
+            margin-right: 30px;
+            padding-left: 40px;
+        }
+        .box4 {
+            margin-right: 30px;
+            padding-left: 40px;
+            grid-column: 3;
+        }
+        img.affiliates {
+            margin-top: 60px;
+        }
+    }
+    
+    .container>div {
+        background: #eee;
+        border-radius: 2px;
+    }
+    /* Committees */
+    
+    img {
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+    
+    .comm {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-row-gap: .2em;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    #first {
+        font-weight: 750;
+        color: rgb(47, 47, 47);
+    }
+    
+    #second {
+        font-weight: 700;
+        font-size: 15px;
+        color: rgb(30, 78, 133);
+    }
+    /* Committees indiv. */
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .desc {
+        border: solid 2px rgb(45, 91, 177);
+        margin-left: 1px;
+        margin-right: 1px;
+        height: 210px;
+    }
+    
+    .mission {
+        margin-right: 50px;
+    }
+    
+    .story {
+        margin-right: 50px;
+    }
+    /* Text & Nav */
+    
+    .navigation {
+        display: grid;
+        grid-template-columns: 60% 30% 10%;
+    }
+    
+    #left {
+        margin-top: 10px;
+        margin-left: 30px;
+        color: rgb(49, 49, 49);
+    }
+    
+    #left2 {
+        margin-top: 27px;
+        font-weight: 700;
+    }
+    
+    #center {
+        color: rgb(49, 49, 49);
+        text-align: right;
+    }
+    
+    #right {
+        color: rgb(49, 49, 49);
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    #right2 {
+        margin-top: 30px;
+        color: rgb(49, 49, 49);
+        font-weight: 700;
+        text-align: right;
+    }
+    
+    img:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+</style>
+
 <app-header></app-header>
 
-<div class="body">
+<div class="container">
+    <div class="box1">
+        <div class="align">
+            <a href="https://www.teamusa.org/USA-Judo">
+                <img alt="USA Judo" src="../../assets/usajudo.png" width="100px" class="affiliates">
+            </a>
+            <a href="https://www.usja.net/">
+                <img alt="USJA" src="../../assets/usja.png" width="100px" class="affiliates">
+            </a>
+            <a href="https://www.usjf.com/">
+                <img alt="USJF" src="../../assets/usjf.png" width="100px" class="affiliates">
+            </a>
+            <a href="http://panamericanjudo.com/">
+                <img alt="PanAmCon" src="../../assets/panamcon.png" width="100px" class="affiliates">
+            </a>
+            <a href="https://www.ijf.org/">
+                <img alt="IJF" src="../../assets/ijf.png" width="100px" class="affiliates">
+            </a>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="navigation">
 
-<div class="side-bar-1-7">
-    <p>Affiliate Logos</p>
+            <h1 id="center">Officers</h1>
 
-    <div class="content-1-7">
-        <p>
-            Committees
-            <br/> Chairman of the Board
-            <br/> Vice Chairman of the Board
-            <br/> Treasurer
-            <br/> Secretary
-            <br/> Athelete
-            <br/> Coach
-            <br/> Kata
-            <br/> Referee
-            <br/> Tournament
-            <br/> Membership
-            <br/> Travel
-            <br/> Events
-            <br/> International
-        </p>
+            <a href="committees">
+                <div id="right2">Committees</div>
+            </a>
 
-        <div class="content-2-7">
-            <p>Mission</p>
+            <a href="committees">
+                <div id="right"><img alt="IJF" src="../../assets/arrow-right.png" width="30px"></div>
+            </a>
+        </div>
 
-            <div class="content-3-7">
-                <p>Our Story</p>
+
+        <div class="comm">
+            <a href="">
+                <div class="desc">
+                    <div id="img">
+                        <img src="https://www.usja.net/static/images/johnpaccione.jpg" width="100px">
+                    </div>
+                    <p id="first">John <br> Paccione</p>
+                    <p id="second">President</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="desc">
+                    <img src="https://www.usja.net/static/images/celitaschutz.jpg" width="100px">
+                    <p id="first">Celita <br> Schutz</p>
+                    <p id="second">Vice President</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="desc">
+                    <img src="https://www.usja.net/static/images/davidgoodwin.jpg" width="100px">
+                    <p id="first">David <br> Goodwin</p>
+                    <p id="second">Secretary</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="desc">
+                    <img src="https://www.usja.net/static/images/marktamulionis.jpg" width="100px">
+                    <p id="first">Mark <br> Tamulionis</p>
+                    <p id="second">Treasurer</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="desc">
+                    <img src="https://www.usja.net/static/images/sparkybollinger.jpg" width="100px">
+                    <p id="first">H.C. (Sparky) <br> Bollinger</p>
+                    <p id="second">Director</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="desc">
+                    <img src="https://www.usja.net/static/images/edrodriguez.jpg" width="100px">
+                    <p id="first">Ed <br> Rodriguez</p>
+                    <p id="second">Director</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="desc">
+                    <img src="https://www.usja.net/static/images/bobrush.jpg" width="100px">
+                    <p id="first">Paul (Bob) <br> Rush</p>
+                    <p id="second">Director</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="desc">
+                    <img src="https://www.usja.net/static/images/garygoltz.jpg" width="100px">
+                    <p id="first">Gary Goltz</p>
+                    <p id="second">Chairman, Promotion Board</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="box3">
+        <h1>Mission</h1>
+        <div class="mission">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus vitae urna dapibus fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam placerat ullamcorper libero sit amet mattis. Maecenas
+            nec sapien nunc. In non feugiat lorem. Vivamus sit amet orci eu justo imperdiet scelerisque nec efficitur felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed mollis augue at urna feugiat, sit amet
+            sagittis urna venenatis. Nam lobortis malesuada pharetra. Nam laoreet ipsum vitae ligula bibendum condimentum. Nulla vehicula odio lorem, pellentesque viverra libero porta non. Integer faucibus vulputate neque. Aenean eu porta justo.
+        </div>
+    </div>
+
+    <div class="box4">
+        <h1>Our Story</h1>
+        <div class="story">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus vitae urna dapibus fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam placerat ullamcorper libero sit amet mattis. Maecenas
+            nec sapien nunc. In non feugiat lorem. Vivamus sit amet orci eu justo imperdiet scelerisque nec efficitur felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed mollis augue at urna feugiat, sit amet
+            sagittis urna venenatis. Nam lobortis malesuada pharetra. Nam laoreet ipsum vitae ligula bibendum condimentum. Nulla vehicula odio lorem, pellentesque viverra libero porta non. Integer faucibus vulputate neque. Aenean eu porta justo. Fusce
+            luctus ac nunc ac dignissim. Nullam ut erat aliquet, cursus quam vel, fringilla neque. Etiam at sollicitudin massa. Pellentesque ac augue libero. Sed eget turpis magna. Donec ut nunc dictum, tempor tortor in, aliquet nibh. Sed quis erat dignissim,
+            molestie nisi eget, euismod eros. Aenean porttitor ante velit, et bibendum tellus fermentum quis. Suspendisse egestas lacus quis mauris fringilla, sed volutpat tellus pulvinar. Donec eget velit velit. Integer nisi nunc, elementum ac nisl non,
+            rutrum cursus metus. Aliquam nisi eros, ornare a ornare id, cursus eget enim.
+        </div>
+    </div>
 </div>
-
-                <app-footer></app-footer>
-                
+<app-footer></app-footer>

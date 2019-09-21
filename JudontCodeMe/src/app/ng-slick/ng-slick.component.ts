@@ -3,8 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ng-slick',
   templateUrl: './ng-slick.component.html',
-  styleUrls: ['./ng-slick.component.css']
+  styleUrls: ['./ng-slick.component.scss']
 })
+
 export class NgSlickComponent implements OnInit {
   title = 'ngSlick';
     slides = [
