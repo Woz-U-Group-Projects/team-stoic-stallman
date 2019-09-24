@@ -1,13 +1,54 @@
 <style>
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width:600px) {
         .container {
             margin-top: 10px;
             display: grid;
             grid-template-columns: 100%;
             grid-auto-rows: 80px;
             grid-gap: 1em;
-            margin-bottom: 980px
+            margin-bottom: 980px;
+            background-color: red;
         }
+
+        .box1 {
+            grid-row: 1;
+            padding: 0px 20px 400px 20px;
+        }
+        .box2 {
+            margin-top: 312px;
+            grid-row: 3;
+            padding: 0px 20px 300px 20px;
+        }
+        .box3 {
+            margin-top: 315px;
+            grid-row: 2;
+            padding: 30px 20px 50px 20px;
+        }
+        .box4 {
+            margin-top: 530px;
+            grid-row: 4;
+            padding: 0px 20px 300px 20px;
+        }
+        .box5 {
+            margin-top: 750px;
+            grid-row: 5;
+            padding: 0px 20px 300px 20px;
+        }
+        #length {
+            width: 40%;
+        }
+    }
+
+    @media screen and (max-width: 1200px) and (min-width: 601px){
+        .container {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-auto-rows: 80px;
+            grid-gap: 1em;
+            margin-bottom: 980px;
+        }
+
         .box1 {
             grid-row: 1;
             padding: 0px 20px 400px 20px;
@@ -33,7 +74,8 @@
             padding: 0px 20px 300px 20px;
         }
     }
-    
+
+
     @media screen and (max-width: 1677px) and (min-width: 1201px) {
         .container {
             margin-top: 10px;
@@ -43,6 +85,7 @@
             grid-gap: 1em;
             grid-auto-rows: 80px;
         }
+
         .box1 {
             grid-column: 1/3;
             grid-row: 1/5;
@@ -71,8 +114,12 @@
             height: 270px;
             padding: 0px 20px 20px 20px;
         }
+
+        .input {
+            width: 90%;
+        }
     }
-    
+
     @media screen and (max-width: 1699px) and (min-width: 1678px) {
         .container {
             margin-top: 10px;
@@ -82,6 +129,7 @@
             grid-gap: 1em;
             grid-auto-rows: 80px;
         }
+
         .box1 {
             grid-column: 1/3;
             grid-row: 1/5;
@@ -92,7 +140,7 @@
             grid-column: 3/4;
             grid-row: 1/5;
             height: 750px;
-            margin-right: 30px;
+            margin-right: 34px;
             padding: 0px 20px 20px 20px;
         }
         .box3 {
@@ -111,46 +159,68 @@
             padding: 0px 20px 20px 20px;
         }
     }
-    
+
     @media screen and (min-width: 1700px) {
         .container {
-            margin-top: 110px;
+            margin-top: 20px;
+            margin-bottom: 350px;
             display: grid;
             grid-template-columns: 25% 25% 50%;
             grid-gap: 1em;
             grid-auto-rows: 80px;
         }
+
         .box1 {
             grid-column: 1/3;
             grid-row: 1/5;
-            max-height: 500px;
+            height: 400px;
             padding: 0px 20px 20px 20px;
+            background: #eee;
+            border-radius: 2px;
         }
         .box2 {
             grid-column: 3/4;
             grid-row: 1/5;
-            height: 750px;
+            height: 875px;
             margin-right: 30px;
             padding: 0px 20px 20px 20px;
+            background: #eee;
+            border-radius: 2px;
         }
         .box3 {
+            height: 40px;
+            margin-top: 50px;
             grid-column: 1/3;
             grid-row: 5;
             padding: 30px 20px 20px 20px;
+            background: #eee;
+            border-radius: 2px;
         }
         .box4 {
+            margin-top: 60px;
             grid-row: 6;
-            height: 270px;
+            height: 333px;
             padding: 0px 20px 20px 20px;
+            background: #eee;
+            border-radius: 2px;
         }
         .box5 {
+            margin-top: 60px;
             grid-row: 6;
-            height: 270px;
+            height: 333px;
             padding: 0px 20px 20px 20px;
+            background: #eee;
+            border-radius: 2px;
+        }
+        .input {
+            width: 90%;
+        }
+        .margin {
+            margin-top: 30px;
         }
     }
     
-    .container>div {
+    .container > div {
         background: #eee;
         border-radius: 2px;
     }
@@ -159,13 +229,13 @@
         padding: 4px 1px 4px 1px;
         margin-left: 10px;
     }
-    
+
     input {
         width: 337px;
         padding: 4px 5px 4px 5px;
         margin: 4px 0 0 10px;
     }
-    
+
     .reg {
         text-align: center;
         margin: 15px 0 0 0;
@@ -173,73 +243,69 @@
         font-weight: 750;
         color: rgb(91, 95, 102);
     }
-    
+
     .size {
         font-size: 16px;
         font-weight: 700;
         color: rgb(72, 119, 182);
     }
-    
+
     #sub {
         margin: 10px 0 0 45%;
         padding: 4px 10px 4px 10px;
     }
-</style>
 
-<app-header></app-header>
-
-<div class="container">
-    <div class="box1">
-        <p>
-            Media Enabled as Uploaded
-            <br /> Clickable Thumbs
-        </p>
-    </div>
-
-    <div class="box2">
-        <p>
-            Athlete Discussion Board:
-            <br /> Members viewing the selection include minors, please keep it clean.
-            <br /> Pick a topic
-            <br /> Message limit 400 characters
-            <br /> User stamp
-            <br /> Date stamp
-            <br /> Time stamp
-        </p>
-    </div>
-
-    <div class="box3">
-        <div class="size">Upload Source:<input type="text" placeholder="Youtube | Instagram | Facebook | PhotoBucket | Snapfish" id="length"><button>upload</button></div>
-    </div>
-
-    <div class="box4">
-        <div class="reg">Documents:</div>
-        <a href="https://www.usjf.com/wp-content/uploads/2018/09/background.pdf" target="_blank">
-            <div>Background Screening</div>
-        </a>
-        <a href="https://www.usjf.com/wp-content/uploads/2018/10/Form20-PromotionFormFields120531.pdf" target="_blank">
-            <div>Promotion Form</div>
-        </a>
-        <a href="https://www.usjf.com/wp-content/uploads/2018/09/Sanctionform201004.pdf" target="_blank">
-            <div>Sanction Form</div>
-        </a>
-        <a href="http://shufujudo.org/wp-content/uploads/COMPETITION-rules-from-2015-Amsterdam.pdf" target="_blank">
-            <div>Kata Competition Rules</div>
-        </a>
-        <a href="../../assets/2018 IJF Seminar 23 APR 2018.pdf">
-            <div>Referee Rules</div>
-        </a>
-    </div>
-
-    <div class="box5">
-        <div class="reg">Register for an Event:</div>
-        <br /> <input type="text" placeholder="Name">
-        <br /> <input type="text" placeholder="Location">
-        <br /> <input type="text" placeholder="Address">
-        <br /> <input type="text" placeholder="Host">
-        <br /> <input type="text" placeholder="Date & Time">
-        <button id="sub">submit</button>
-    </div>
-</div>
-
-<app-footer></app-footer>
+    </style>
+        
+        <app-header></app-header>
+    
+        <div class="container">
+                <div class="box1">
+                    <p>
+                        Media Enabled as Uploaded
+                        <br/> Clickable Thumbs
+                    </p>
+                </div>
+            
+                    <div class="box2">
+                        <p>
+                            Athlete Discussion Board:
+                                <br/> Members viewing the selection include minors, please keep it clean.
+                                <br/> Pick a topic
+                                <br/> Message limit 400 characters
+                                <br/> User stamp
+                                <br/> Date stamp
+                                <br/> Time stamp
+                        </p>
+                    </div>
+                            
+                        <div class="box3">
+                            <div class="size">Upload Source:<input type="text" placeholder="Youtube | Instagram | Facebook | PhotoBucket | Snapfish" id="length"><button>upload</button></div>
+                        </div>
+            
+                            <div class="box4">
+                                    <!--Upcoming Events:
+                                    <br/> Name, Date, Location (link events)-->
+                                    <div class="reg">Latest Official Rules:</div>
+                                    <a href="">
+                                        <div>competition</div>
+                                    </a>
+                                    <a href="">
+                                        <div>kata</div>
+                                    </a>
+                            </div>
+            
+                                <div class="box5">
+                                        <div class="reg">Register for an Event:</div>
+                                        <div class="margin">
+                                        <br/> <input type="text" placeholder="Name" class="input">
+                                        <br/> <input type="text" placeholder="Location" class="input">
+                                        <br/> <input type="text" placeholder="Address" class="input">
+                                        <br/> <input type="text" placeholder="Host" class="input">
+                                        <br/> <input type="text" placeholder="Date & Time" class="input">
+                                        <button id="sub">submit</button>
+                                        </div>
+                                </div>
+            </div>
+    
+        <app-footer></app-footer>
