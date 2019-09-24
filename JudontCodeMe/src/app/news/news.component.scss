@@ -11,6 +11,7 @@
         grid-row: 1;
         border-radius: 2px;
         background: #eee;
+        overflow: auto;
     }
     .box2 {
         grid-column: 1;
@@ -59,6 +60,7 @@
         border-radius: 2px;
         background: #eee;
         height: 755px;
+        overflow: auto;
     }
     .box2 {
         grid-column: 2;
@@ -112,6 +114,7 @@
         border-radius: 2px;
         background: #eee;
         height: 900px;
+        overflow: auto;
     }
     .box2 {
         grid-column: 2;
