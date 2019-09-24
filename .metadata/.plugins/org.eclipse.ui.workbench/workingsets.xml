@@ -8,4 +8,5 @@
 <item elementID="=judo/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1565333188175_2" label="Window Working Set" name="Aggregate for window 1565333188175"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569126796629_3" label="Window Working Set" name="Aggregate for window 1569126796629"/>
 </workingSetManager>
