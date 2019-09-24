@@ -16,6 +16,8 @@ import { EventUsajComponent } from './event-usaj/event-usaj.component';
 import { EventUsjaComponent } from './event-usja/event-usja.component';
 import { EventUsjfComponent } from './event-usjf/event-usjf.component';
 import { CommitteesComponent } from './committees/committees.component';
+import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -36,7 +38,9 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'help', component: HelpComponent},
   {path: 'paypal', component: PaypalComponent},
-  {path: '',redirectTo: '/home', pathMatch: 'full'}
+  {path: 'admin', component: AdminComponent},
+  {path: 'login', component: LoginComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({

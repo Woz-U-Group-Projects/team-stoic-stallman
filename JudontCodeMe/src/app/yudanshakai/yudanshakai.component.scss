@@ -1,0 +1,848 @@
+@media screen and (max-width: 645px) {
+    .container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .box1 {
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+        margin: 0 32px 0 0;
+        padding: 10px 0 5px 0;
+        background: #eee;
+    }
+    .box2 {
+        margin-right: 32px;
+        grid-column: 1/4;
+        grid-row: 3;
+        height: 500px;
+        padding: 0px 0px 80px 0px;
+        overflow: auto;
+        background: #eee;
+    }
+    .box3 {
+        grid-column: 1;
+        grid-row: 2;
+        background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+        border-radius: 2px;
+        padding: 20px 0 20px 0;
+    }
+    .box4 {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 3px 0px 1px 0px;
+        background: radial-gradient(rgb(24, 76, 110), rgb(31, 90, 138), rgb(17, 68, 116));
+        margin-right: 32px;
+        font-weight: 650;
+        color: rgb(203, 213, 221);
+        border-radius: 2px;
+    }
+    .box5 {
+        grid-column: 1/4;
+        grid-row: 4;
+        overflow: auto;
+        height: 400px;
+        padding: 0px 40px 80px 40px;
+        margin: 0 32px 0 0;
+        background: #eee;
+    }
+    .align {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    img.affiliates {
+        list-style: none;
+        display: inline-block;
+        padding: 20px 20px 19px 20px;
+    }
+    #btnClose {
+        margin-left: 45%;
+        margin-bottom: 6%;
+        cursor: pointer;
+    }
+    #waiverText {
+        padding: 30px 50px 50px 50px;
+    }
+    .waiver {
+        position: fixed;
+        top: 15%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 500px;
+        width: 100%;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnCloseCode {
+        margin-bottom: 6%;
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #codeText {
+        padding: 50px;
+    }
+    .code {
+        position: fixed;
+        top: 15%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 500px;
+        width: 100%;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnNo {
+        margin-top: 20px;
+        margin-left: 24px;
+        padding: 20px 20% 20px 20%;
+        cursor: pointer;
+    }
+    #btnYes {
+        margin-top: 20px;
+        padding: 20px 20% 20px 20%;
+        cursor: pointer;
+    }
+    .acknowledgement {
+        position: fixed;
+        top: 35%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 180px;
+        width: 100%;
+        visibility: hidden;
+    }
+    .position {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 646px) and (max-width: 828px) {
+    .container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .box1 {
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+        margin: 0 32px 0 0;
+        padding: 10px 0 5px 0;
+        background: #eee;
+    }
+    .box2 {
+        margin-right: 32px;
+        grid-column: 1/4;
+        grid-row: 3;
+        height: 500px;
+        padding: 0px 0px 80px 0px;
+        overflow: auto;
+        background: #eee;
+    }
+    .box3 {
+        grid-column: 1;
+        grid-row: 2;
+        background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+        border-radius: 2px;
+        padding: 10px 0 10px 0;
+    }
+    .box4 {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 3px 0px 1px 0px;
+        background: radial-gradient(rgb(24, 76, 110), rgb(31, 90, 138), rgb(17, 68, 116));
+        margin-right: 32px;
+        font-weight: 650;
+        color: rgb(203, 213, 221);
+        border-radius: 2px;
+    }
+    .box5 {
+        grid-column: 1/4;
+        grid-row: 4;
+        overflow: auto;
+        height: 400px;
+        padding: 0px 40px 80px 40px;
+        margin: 0 32px 0 0;
+        background: #eee;
+    }
+    .align {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    img.affiliates {
+        list-style: none;
+        display: inline-block;
+        padding: 20px 20px 19px 20px;
+    }
+    #btnClose {
+        margin-left: 45%;
+        margin-bottom: 6%;
+        cursor: pointer;
+    }
+    #waiverText {
+        padding: 30px 50px 50px 50px;
+    }
+    .waiver {
+        position: fixed;
+        top: 15%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 500px;
+        width: 100%;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnCloseCode {
+        margin-bottom: 6%;
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #codeText {
+        padding: 50px;
+    }
+    .code {
+        position: fixed;
+        top: 15%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 500px;
+        width: 100%;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnNo {
+        margin-top: 20px;
+        margin-left: 24px;
+        padding: 20px 20% 20px 20%;
+        cursor: pointer;
+    }
+    #btnYes {
+        margin-top: 20px;
+        padding: 20px 20% 20px 20%;
+        cursor: pointer;
+    }
+    .acknowledgement {
+        position: fixed;
+        top: 35%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 180px;
+        width: 100%;
+        visibility: hidden;
+    }
+    .position {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 829px) and (max-width: 1500px) {
+    .container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .box1 {
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+        margin: 0 32px 0 0;
+        padding: 10px 0 5px 0;
+        background: #eee;
+    }
+    .box2 {
+        margin-right: 32px;
+        grid-column: 1/4;
+        grid-row: 3;
+        height: 500px;
+        padding: 0px 0px 80px 0px;
+        overflow: auto;
+        background: #eee;
+    }
+    .box3 {
+        grid-column: 1;
+        grid-row: 2;
+        background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+        border-radius: 2px;
+        padding: 10px 0 10px 0;
+    }
+    .box4 {
+        grid-row: 2/3;
+        height: 10px;
+        padding: 3px 0px 40px 0px;
+        background: radial-gradient(rgb(24, 76, 110), rgb(31, 90, 138), rgb(17, 68, 116));
+        margin-right: 32px;
+        font-weight: 650;
+        color: rgb(203, 213, 221);
+        border-radius: 2px;
+    }
+    .box5 {
+        margin: 0 32px 0 0;
+        grid-column: 1/4;
+        grid-row: 4;
+        overflow: auto;
+        height: 400px;
+        padding: 0px 40px 80px 40px;
+        background: #eee;
+    }
+    .align {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    img.affiliates {
+        list-style: none;
+        display: inline-block;
+        padding: 20px 20px 19px 20px;
+    }
+    #btnClose {
+        margin-left: 45%;
+        margin-bottom: 6%;
+        cursor: pointer;
+    }
+    #waiverText {
+        padding: 30px 50px 50px 50px;
+    }
+    .waiver {
+        position: fixed;
+        top: 15%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 500px;
+        width: 100%;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnCloseCode {
+        margin-bottom: 6%;
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #codeText {
+        padding: 50px;
+    }
+    .code {
+        position: fixed;
+        top: 15%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 500px;
+        width: 100%;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnNo {
+        margin-top: 20px;
+        margin-left: 24px;
+        padding: 20px 20% 20px 20%;
+        cursor: pointer;
+    }
+    #btnYes {
+        margin-top: 20px;
+        padding: 20px 20% 20px 20%;
+        cursor: pointer;
+    }
+    .acknowledgement {
+        position: fixed;
+        top: 35%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 180px;
+        width: 100%;
+        visibility: hidden;
+    }
+    .position {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1678px) {
+    .container {
+        margin-top: 35px;
+        margin-bottom: 550px;
+        grid-auto-rows: 50px;
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .box1 {
+        grid-row: 1/4;
+        height: 630px;
+        padding: 30px;
+        background: #eee;
+    }
+    .box2 {
+        grid-row: 1/4;
+        position: static;
+        height: 650px;
+        overflow: auto;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    .box3 {
+        grid-row: 1/2;
+        margin-right: 30px;
+        padding: 10px 40px 10px 40px;
+        background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+        border-radius: 2px;
+    }
+    .box4 {
+        grid-row: 2/3;
+        height: 10px;
+        padding: 3px 0px 40px 0px;
+        background: radial-gradient(rgb(24, 76, 110), rgb(31, 90, 138), rgb(17, 68, 116));
+        margin-right: 32px;
+        font-weight: 650;
+        color: rgb(203, 213, 221);
+        border-radius: 2px;
+    }
+    .box5 {
+        grid-row: 3;
+        margin-right: 30px;
+        height: 518px;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    img.affiliates {
+        margin-top: 40px;
+    }
+    #btnClose {
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #waiverText {
+        padding: 30px 50px 50px 50px;
+    }
+    .waiver {
+        position: fixed;
+        top: 15%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 600px;
+        width: 600px;
+        visibility: hidden;
+    }
+    #btnCloseCode {
+        margin-bottom: 6%;
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #codeText {
+        padding: 50px;
+    }
+    .code {
+        position: fixed;
+        top: 15%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 600px;
+        width: 600px;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnNo {
+        margin-top: 20px;
+        margin-left: 14px;
+        padding: 20px 131px 20px 131px;
+        cursor: pointer;
+    }
+    #btnYes {
+        margin-top: 20px;
+        padding: 20px 131px 20px 131px;
+        cursor: pointer;
+    }
+    .acknowledgement {
+        position: fixed;
+        top: 35%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 180px;
+        width: 600px;
+        visibility: hidden;
+    }
+    .position {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1679px) and (max-width: 1699px) {
+    .container {
+        margin-top: 35px;
+        margin-bottom: 550px;
+        grid-auto-rows: 50px;
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .box1 {
+        grid-row: 1/4;
+        height: 666px;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    .box2 {
+        grid-row: 1/4;
+        position: static;
+        height: 666px;
+        overflow: auto;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    .box3 {
+        grid-row: 1/2;
+        padding: 10px 40px 10px 40px;
+        background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+        border-radius: 2px;
+        margin-right: 32px;
+    }
+    .box4 {
+        grid-row: 2/3;
+        height: 10px;
+        padding: 3px 0px 40px 0px;
+        background: radial-gradient(rgb(24, 76, 110), rgb(31, 90, 138), rgb(17, 68, 116));
+        margin-right: 32px;
+        font-weight: 650;
+        color: rgb(203, 213, 221);
+        border-radius: 2px;
+    }
+    .box5 {
+        grid-row: 3;
+        height: 533px;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+        margin-right: 32px;
+    }
+    img.affiliates {
+        margin-top: 55px;
+    }
+    #btnClose {
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #waiverText {
+        padding: 30px 50px 50px 50px;
+    }
+    .waiver {
+        position: fixed;
+        top: 15%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 600px;
+        width: 600px;
+        visibility: hidden;
+    }
+    #btnCloseCode {
+        margin-bottom: 6%;
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #codeText {
+        padding: 50px;
+    }
+    .code {
+        position: fixed;
+        top: 15%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 600px;
+        width: 600px;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnNo {
+        margin-top: 20px;
+        margin-left: 14px;
+        padding: 20px 131px 20px 131px;
+        cursor: pointer;
+    }
+    #btnYes {
+        margin-top: 20px;
+        padding: 20px 131px 20px 131px;
+        cursor: pointer;
+    }
+    .acknowledgement {
+        position: fixed;
+        top: 35%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 180px;
+        width: 600px;
+        visibility: hidden;
+    }
+    .position {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .container {
+        margin-top: 35px;
+        margin-bottom: 720px;
+        grid-auto-rows: 50px;
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .box1 {
+        grid-row: 1/4;
+        height: 840px;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    .box2 {
+        grid-row: 1/4;
+        position: static;
+        height: 840px;
+        overflow: auto;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+    }
+    .box3 {
+        grid-row: 1/2;
+        padding: 10px 40px 10px 40px;
+        background-image: radial-gradient(rgb(219, 212, 104), rgb(173, 153, 63), rgb(172, 134, 64));
+        border-radius: 2px;
+        margin-right: 32px;
+    }
+    .box4 {
+        grid-row: 2/3;
+        height: 10px;
+        padding: 3px 0px 40px 0px;
+        background: radial-gradient(rgb(24, 76, 110), rgb(31, 90, 138), rgb(17, 68, 116));
+        margin-right: 32px;
+        font-weight: 650;
+        color: rgb(203, 213, 221);
+        border-radius: 2px;
+    }
+    .box5 {
+        grid-row: 3;
+        height: 709px;
+        padding: 0px 40px 40px 40px;
+        background: #eee;
+        margin-right: 32px;
+    }
+    img.affiliates {
+        margin-top: 55px;
+    }
+    #btnClose {
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #waiverText {
+        padding: 30px 50px 50px 50px;
+    }
+    .waiver {
+        position: fixed;
+        top: 15%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 600px;
+        width: 600px;
+        visibility: hidden;
+    }
+    #btnCloseCode {
+        margin-bottom: 6%;
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    #codeText {
+        padding: 50px;
+    }
+    .code {
+        position: fixed;
+        top: 15%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 600px;
+        width: 600px;
+        visibility: hidden;
+        overflow: auto;
+    }
+    #btnNo {
+        margin-top: 20px;
+        margin-left: 14px;
+        padding: 20px 131px 20px 131px;
+        cursor: pointer;
+    }
+    #btnYes {
+        margin-top: 20px;
+        padding: 20px 131px 20px 131px;
+        cursor: pointer;
+    }
+    .acknowledgement {
+        position: fixed;
+        top: 35%;
+        left: 18%;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: rgb(199, 195, 195);
+        height: 180px;
+        width: 600px;
+        visibility: hidden;
+    }
+    .position {
+        margin-top: 120px;
+    }
+}
+
+.container>div {
+    border-radius: 2px;
+}
+
+.box5 {
+    box-shadow: 0 1px 2px #fff, -1px 0px 3px #666, inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 10px 10px rgba(255, 255, 255, 0.8);
+}
+
+.agreement {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(105, 104, 104);
+}
+
+h2 {
+    color: rgb(78, 78, 78);
+}
+
+a {
+    text-decoration: none;
+}
+
+.discussion {
+    background: rgb(102, 98, 98);
+    border-radius: 2px;
+    padding: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
+}
+
+#topic {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(206, 206, 206);
+}
+
+#by {
+    font-size: 14px;
+    font-weight: 550;
+    color: rgb(206, 206, 206);
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(31, 103, 161);
+    padding: 15px 20px 15px 20px;
+    border-radius: 3px;
+    color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(42, 135, 211);
+}
+
+.button:active {
+    box-shadow: 5px 5px 1px 0px rgb(66, 67, 68);
+    border-bottom-width: 4px;
+    transform: translateY(4px);
+    background: rgb(45, 87, 204);
+    ;
+}
+
+.affiliates:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+#one:hover {
+    opacity: .8;
+}
+
+#two:hover {
+    opacity: .8;
+}
+
+#three:hover {
+    opacity: .8;
+}
+
+#four:hover {
+    opacity: .8;
+}
+
+#five:hover {
+    opacity: .8;
+}
+
+#six:hover {
+    opacity: .8;
+}
+
+#seven:hover {
+    opacity: .8;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+#btnWaiver,
+#btnCode {
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}

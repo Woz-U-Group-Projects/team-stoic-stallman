@@ -25,6 +25,8 @@ import { CommitteesComponent } from './committees/committees.component';
 import { NgSlickComponent } from './ng-slick/ng-slick.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EventUsjfComponent,
     CommitteesComponent,
     NgSlickComponent,
+    AdminComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
