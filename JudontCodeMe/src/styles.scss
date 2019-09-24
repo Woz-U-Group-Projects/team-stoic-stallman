@@ -2,3 +2,5 @@
 
 @import '~@fullcalendar/core/main.css';
 @import '~@fullcalendar/daygrid/main.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -24,6 +24,7 @@ import { EventUsjfComponent } from './event-usjf/event-usjf.component';
 import { CommitteesComponent } from './committees/committees.component';
 import { NgSlickComponent } from './ng-slick/ng-slick.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -46,13 +47,14 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     EventUsjaComponent,
     EventUsjfComponent,
     CommitteesComponent,
-    NgSlickComponent
+    NgSlickComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FullCalendarModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
