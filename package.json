@@ -60,7 +60,7 @@
         "tumblr.js": "^2.0.2",
         "twilio": "^3.35.0",
         "twit": "^2.2.11",
-        "validator": "^11.1.00"
+        "validator": "^13.7.0"
     },
     "peerDependencies": {
         "node-sass": "^4.12.0"
